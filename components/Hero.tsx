@@ -1,7 +1,6 @@
 import Link from "next/link";
 import Logo from "./Logo";
 import SiteImage from "./SiteImage";
-import { BRAND_TAGLINE_SINHALA } from "@/lib/data";
 import { IMAGES } from "@/lib/images";
 import styles from "./Hero.module.css";
 
@@ -15,7 +14,6 @@ export default function Hero() {
 
       <div className={`container ${styles.content}`}>
         <Logo variant="hero" />
-        <p className={styles.tagline}>{BRAND_TAGLINE_SINHALA}</p>
         <p className={styles.eyebrow}>Healthy &amp; Preservative Free</p>
         <h1 className={styles.title}>
           The Art of <em>Natural</em> Preservation
