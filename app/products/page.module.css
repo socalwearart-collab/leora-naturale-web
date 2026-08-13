@@ -1,0 +1,27 @@
+.hero {
+  background: var(--forest);
+  color: var(--white);
+  padding: 6rem 0 4rem;
+  text-align: center;
+}
+
+.hero .section-label {
+  color: var(--gold-light);
+}
+
+.hero .section-title {
+  color: var(--white);
+}
+
+.hero .section-title em {
+  color: var(--sage-light);
+}
+
+.hero .section-subtitle {
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.products {
+  background: var(--cream);
+}

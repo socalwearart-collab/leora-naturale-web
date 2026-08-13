@@ -1,0 +1,54 @@
+.section {
+  background: var(--white);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.imageCol {
+  position: relative;
+}
+
+.image {
+  border-radius: var(--radius-lg);
+  width: 100%;
+  height: auto;
+  box-shadow: var(--shadow-lg);
+  display: block;
+}
+
+.accent {
+  position: absolute;
+  bottom: -20px;
+  right: -20px;
+  width: 120px;
+  height: 120px;
+  background: var(--gold-light);
+  border-radius: var(--radius-lg);
+  z-index: -1;
+}
+
+.content p {
+  color: var(--text-muted);
+  line-height: 1.8;
+  margin-bottom: 1.25rem;
+}
+
+.content .btn {
+  margin-top: 1rem;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .accent {
+    display: none;
+  }
+}

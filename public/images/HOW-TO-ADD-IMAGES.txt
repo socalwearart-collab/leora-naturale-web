@@ -1,0 +1,49 @@
+LEORA NATURALE - HOW TO ADD / REPLACE IMAGES
+=============================================
+
+Save your image files into these folders (replace existing files, keep the same filename):
+
+LOGO
+  public/images/logo.jpg
+
+HERO BANNER (homepage top)
+  public/images/hero/banner.jpg
+
+ABOUT SECTION
+  public/images/about/market.jpg
+  public/images/about/wellness.jpg
+
+PRODUCT PHOTOS (one per product - use these exact filenames)
+  public/images/products/dehydrated-jackfruit.jpg
+  public/images/products/heen-bovitiya-tea.jpg
+  public/images/products/dehydrated-bitter-gourd.jpg
+  public/images/products/dehydrated-kohila.jpg
+  public/images/products/heen-bovitiya-powder.jpg
+  public/images/products/banana-sesame.jpg
+
+CATEGORY CARDS
+  public/images/categories/dehydrated-snacks.jpg
+  public/images/categories/herbal-wellness.jpg
+  public/images/categories/herbal-powders.jpg
+  public/images/categories/traditional-roots.jpg
+
+BLOG POST COVERS
+  public/images/blog/art-of-dehydration.jpg
+  public/images/blog/heen-bovitiya-wellness.jpg
+  public/images/blog/preservative-free-living.jpg
+
+INGREDIENT ICONS
+  public/images/ingredients/jackfruit.jpg
+  public/images/ingredients/bitter-gourd.jpg
+  public/images/ingredients/heen-bovitiya.jpg
+  public/images/ingredients/banana-sesame.jpg
+
+IMPACT SECTION
+  public/images/impact/community.jpg
+
+AFTER REPLACING IMAGES:
+  1. Commit and push to GitHub, OR
+  2. Run: npx vercel --prod
+  Vercel will redeploy with your new images.
+
+Recommended: JPG or PNG, at least 800x800px for products.

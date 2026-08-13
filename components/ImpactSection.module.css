@@ -1,0 +1,39 @@
+.section {
+  background: var(--white);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.content p {
+  color: var(--text-muted);
+  line-height: 1.8;
+  margin-bottom: 1.25rem;
+}
+
+.content .btn {
+  margin-top: 0.5rem;
+}
+
+.imageWrap {
+  position: relative;
+}
+
+.image {
+  border-radius: var(--radius-lg);
+  width: 100%;
+  height: auto;
+  box-shadow: var(--shadow-lg);
+  display: block;
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+}

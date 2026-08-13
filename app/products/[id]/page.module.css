@@ -1,0 +1,152 @@
+.hero {
+  background: var(--cream-dark);
+  padding: 1.5rem 0;
+}
+
+.backLink {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--sage);
+  transition: color var(--transition);
+}
+
+.backLink:hover {
+  color: var(--forest);
+}
+
+.detail {
+  background: var(--white);
+  padding-top: 2rem;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-lg);
+}
+
+.sinhala {
+  font-size: 1.15rem;
+  color: var(--earth);
+  margin: -0.35rem 0 1rem;
+}
+
+.price {
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: var(--forest);
+  margin-bottom: 0.25rem;
+}
+
+.weight {
+  font-size: 0.9rem;
+  color: var(--sage);
+  margin-bottom: 1.5rem;
+}
+
+.description {
+  color: var(--text-muted);
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+.benefits {
+  margin-bottom: 2rem;
+}
+
+.benefits h3 {
+  font-family: var(--font-heading), Georgia, serif;
+  font-size: 1.1rem;
+  color: var(--forest);
+  margin-bottom: 0.75rem;
+}
+
+.benefits ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.benefits li {
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  padding-left: 1.25rem;
+  position: relative;
+}
+
+.benefits li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--sage);
+  font-weight: 700;
+}
+
+.meta {
+  background: var(--cream);
+  padding: 3rem 0;
+}
+
+.metaGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.metaCard {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  box-shadow: var(--shadow);
+}
+
+.metaCard h3 {
+  font-family: var(--font-heading), Georgia, serif;
+  color: var(--forest);
+  font-size: 1.15rem;
+  margin-bottom: 0.75rem;
+}
+
+.metaCard p {
+  color: var(--text-muted);
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+.related {
+  background: var(--cream-dark);
+}
+
+.related .section-title {
+  margin-bottom: 2.5rem;
+}
+
+.relatedGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+
+@media (max-width: 900px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .metaGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .relatedGrid {
+    grid-template-columns: 1fr;
+  }
+}

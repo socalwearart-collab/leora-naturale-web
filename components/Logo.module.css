@@ -1,0 +1,30 @@
+.logo {
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+.header {
+  height: 56px;
+  width: auto;
+  max-width: 180px;
+}
+
+.footer {
+  max-height: 80px;
+  max-width: 200px;
+}
+
+.hero {
+  max-height: 140px;
+  max-width: 280px;
+  margin-bottom: 1.5rem;
+  filter: drop-shadow(0 2px 12px rgba(0, 0, 0, 0.15));
+}
+
+.section {
+  max-height: 120px;
+  max-width: 240px;
+  margin: 0 auto 1rem;
+}

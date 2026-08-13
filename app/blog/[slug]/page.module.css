@@ -1,0 +1,71 @@
+.hero {
+  background: var(--cream-dark);
+  padding: 1.5rem 0;
+}
+
+.backLink {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--sage);
+  transition: color var(--transition);
+}
+
+.backLink:hover {
+  color: var(--forest);
+}
+
+.article {
+  background: var(--white);
+  padding-top: 2rem;
+}
+
+.header {
+  max-width: 720px;
+  margin: 0 auto 2.5rem;
+  text-align: center;
+}
+
+.header time {
+  font-size: 0.85rem;
+  color: var(--sage);
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.header h1 {
+  font-family: var(--font-heading), Georgia, serif;
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  color: var(--forest);
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.excerpt {
+  font-size: 1.1rem;
+  color: var(--text-muted);
+  line-height: 1.7;
+}
+
+.imageWrap {
+  max-width: 900px;
+  margin: 0 auto 3rem;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+}
+
+.content {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+.content p {
+  font-size: 1.05rem;
+  color: var(--text-muted);
+  line-height: 1.8;
+  margin-bottom: 1.5rem;
+}

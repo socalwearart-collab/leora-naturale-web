@@ -1,0 +1,97 @@
+.section {
+  background: var(--cream);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: start;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+  margin-top: 2rem;
+}
+
+.details h4 {
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--sage);
+  margin-bottom: 0.4rem;
+}
+
+.details a {
+  color: var(--forest);
+  font-weight: 500;
+  transition: color var(--transition);
+}
+
+.details a:hover {
+  color: var(--gold);
+}
+
+.form {
+  background: var(--white);
+  border-radius: var(--radius-lg);
+  padding: 2rem;
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+
+.field label {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--forest);
+}
+
+.field input,
+.field textarea {
+  padding: 0.875rem 1rem;
+  border: 1px solid var(--cream-dark);
+  border-radius: var(--radius);
+  background: var(--cream);
+  transition: border-color var(--transition);
+  resize: vertical;
+}
+
+.field input:focus,
+.field textarea:focus {
+  outline: none;
+  border-color: var(--sage);
+}
+
+.success {
+  color: var(--forest);
+  font-size: 0.9rem;
+  background: var(--sage-light);
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius);
+}
+
+.error {
+  color: #b91c1c;
+  font-size: 0.9rem;
+  background: #fef2f2;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius);
+}
+
+@media (max-width: 768px) {
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
