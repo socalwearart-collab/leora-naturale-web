@@ -1,7 +1,9 @@
 import Link from "next/link";
 import SiteImage from "@/components/SiteImage";
+import JsonLd from "@/components/JsonLd";
 import { notFound } from "next/navigation";
 import { getProductById, getProducts, getWhatsAppOrderLink } from "@/lib/data";
+import { breadcrumbJsonLd, productJsonLd } from "@/lib/seo";
 import ProductCard from "@/components/ProductCard";
 import styles from "./page.module.css";
 
@@ -15,8 +17,9 @@ export function generateMetadata({ params }: Props) {
   const product = getProductById(params.id);
   if (!product) return { title: "Product Not Found" };
   return {
-    title: `${product.name} | Leora Naturale`,
+    title: product.name,
     description: product.description,
+    alternates: { canonical: `/products/${product.id}/` },
   };
 }
 
@@ -30,6 +33,14 @@ export default function ProductDetailPage({ params }: Props) {
 
   return (
     <>
+      <JsonLd data={productJsonLd(product)} />
+      <JsonLd
+        data={breadcrumbJsonLd([
+          { name: "Home", path: "/" },
+          { name: "Products", path: "/products/" },
+          { name: product.name, path: `/products/${product.id}/` },
+        ])}
+      />
       <section className={styles.hero}>
         <div className="container">
           <Link href="/products" className={styles.backLink}>
@@ -53,6 +64,11 @@ export default function ProductDetailPage({ params }: Props) {
             <span className="section-label">{product.category}</span>
             <h1 className="section-title">{product.name}</h1>
             {product.nameSinhala && <p className={styles.sinhala}>{product.nameSinhala}</p>}
+            {product.scientificName && (
+              <p className={styles.latin}>
+                <em>{product.scientificName}</em>
+              </p>
+            )}
             <p className={styles.price}>{product.price}</p>
             <p className={styles.weight}>{product.weight}</p>
             <p className={styles.description}>{product.longDescription}</p>

@@ -54,6 +54,11 @@
   width: 100%;
 }
 
+.shopBtn {
+  padding: 0.55rem 1.25rem;
+  font-size: 0.85rem;
+}
+
 .menuBtn {
   display: none;
   flex-direction: column;

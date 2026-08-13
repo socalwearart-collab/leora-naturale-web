@@ -3,6 +3,9 @@ import { Playfair_Display, Inter } from "next/font/google";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import WhatsAppButton from "@/components/WhatsAppButton";
+import JsonLd from "@/components/JsonLd";
+import { organizationJsonLd, websiteJsonLd } from "@/lib/seo";
+import { SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "@/lib/site";
 import "./globals.css";
 
 const playfair = Playfair_Display({
@@ -18,21 +21,48 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Leora Naturale | Healthy & Preservative Free Dehydrated Delights",
-  description:
-    "Premium dehydrated snacks and herbal wellness products from Sri Lanka. Chemical-free, nutrient-rich, artisanal quality.",
-  keywords: ["dehydrated snacks", "Sri Lanka", "natural food", "herbal wellness", "Leora Naturale"],
+  metadataBase: new URL(SITE_URL),
+  title: {
+    default: `${SITE_NAME} | Preservative-Free Dehydrated Food from Sri Lanka`,
+    template: `%s | ${SITE_NAME}`,
+  },
+  description: SITE_DESCRIPTION,
+  keywords: [
+    "Leora Naturale",
+    "dehydrated snacks Sri Lanka",
+    "preservative free food",
+    "dehydrated jackfruit",
+    "dehydrated pineapple",
+    "Heen Bovitiya tea",
+    "Osbeckia octandra",
+    "kohila Lasia spinosa",
+    "waraka",
+    "polos",
+    "low temperature dehydration",
+  ],
+  authors: [{ name: SITE_NAME }],
+  creator: SITE_NAME,
+  publisher: SITE_NAME,
+  alternates: { canonical: "/" },
+  robots: { index: true, follow: true },
+  openGraph: {
+    type: "website",
+    locale: "en_LK",
+    url: SITE_URL,
+    siteName: SITE_NAME,
+    title: `${SITE_NAME} | Preservative-Free Dehydrated Food from Sri Lanka`,
+    description: SITE_DESCRIPTION,
+    images: [{ url: "/images/logo.jpg", alt: "Leora Naturale logo" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: `${SITE_NAME} | Preservative-Free Dehydrated Food from Sri Lanka`,
+    description: SITE_DESCRIPTION,
+    images: ["/images/logo.jpg"],
+  },
   icons: {
     icon: "/images/logo.jpg",
     apple: "/images/logo.jpg",
-  },
-  openGraph: {
-    title: "Leora Naturale | Dehydrated Delights",
-    description: "Healthy & preservative free dehydrated snacks and herbal products from Sri Lanka.",
-    url: "https://www.leoranaturale.com",
-    siteName: "Leora Naturale",
-    type: "website",
-    images: [{ url: "/images/logo.jpg" }],
   },
 };
 
@@ -40,6 +70,8 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${playfair.variable} ${inter.variable}`}>
       <body>
+        <JsonLd data={organizationJsonLd()} />
+        <JsonLd data={websiteJsonLd()} />
         <Header />
         <main>{children}</main>
         <Footer />

@@ -1,12 +1,16 @@
 import products from "@/data/products.json";
 import blogPosts from "@/data/blog.json";
+import faqs from "@/data/faqs.json";
+import { getWhatsAppLink } from "@/lib/site";
 
 export { IMAGES } from "@/lib/images";
+export { CONTACT_EMAIL, CONTACT_PHONE, WHATSAPP_NUMBER } from "@/lib/site";
 
 export type Product = {
   id: string;
   name: string;
   nameSinhala?: string;
+  scientificName?: string;
   category: string;
   description: string;
   longDescription: string;
@@ -29,9 +33,6 @@ export type BlogPost = {
   content: string;
 };
 
-export const WHATSAPP_NUMBER = "940718147561";
-export const CONTACT_EMAIL = "leoranaturale@gmail.com";
-export const CONTACT_PHONE = "071 8147561";
 export const BRAND_TAGLINE_SINHALA = "රැකි ගුණි ස්වභාවික";
 export const BRAND_TAGLINE_EN = "Preserved Quality, Naturally";
 export const LOGO_SRC = "/images/logo.jpg";
@@ -64,11 +65,15 @@ export function getBlogPostBySlug(slug: string): BlogPost | undefined {
   return getBlogPosts().find((post) => post.slug === slug);
 }
 
+export function getFaqs(): { question: string; answer: string }[] {
+  return faqs;
+}
+
 export function getWhatsAppOrderLink(productName?: string): string {
   const message = productName
     ? `Hello Leora Naturale, I would like to order ${productName}.`
     : "Hello Leora Naturale, I would like to place an order.";
-  return `https://api.whatsapp.com/send?phone=${WHATSAPP_NUMBER}&text=${encodeURIComponent(message)}`;
+  return getWhatsAppLink(message);
 }
 
 export function formatDate(dateStr: string): string {

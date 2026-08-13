@@ -22,7 +22,7 @@ export default function Footer() {
             <li><Link href="/about">About Us</Link></li>
             <li><Link href="/blog">Blog</Link></li>
             <li><Link href="/#process">Our Process</Link></li>
-            <li><Link href="/#impact">Our Impact</Link></li>
+            <li><Link href="/#faq">FAQ</Link></li>
             <li><Link href="/#contact">Contact</Link></li>
           </ul>
         </div>

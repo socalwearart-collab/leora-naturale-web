@@ -7,3 +7,4 @@ out
 .vercel
 wix-export/
 wix-export.zip
+.github/workflows/

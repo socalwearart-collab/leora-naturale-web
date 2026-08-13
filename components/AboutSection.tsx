@@ -10,7 +10,7 @@ export default function AboutSection() {
         <div className={styles.imageCol}>
           <SiteImage
             src={IMAGES.about}
-            alt="Fresh produce at a local market"
+            alt="Sri Lankan produce selected for Leora Naturale dehydration"
             className={styles.image}
           />
           <div className={styles.accent} />
@@ -19,18 +19,18 @@ export default function AboutSection() {
         <div className={styles.content}>
           <span className="section-label">Welcome to</span>
           <h2 className="section-title">
-            Leora Naturale <em>International</em>
+            Leora Naturale <em>Sri Lanka</em>
           </h2>
           <p>
-            Leora Naturale brings the bounty of all-natural vegetables, fruits, and herbs
-            from Sri Lanka — the exotic island in the Indian Ocean. We offer a variety of
-            preservative-free, all-natural, ready-to-enjoy food range ideal for the health
-            conscious consumer who appreciates food in its purest form.
+            Leora Naturale is a Sri Lankan brand of dehydrated fruit, traditional vegetables,
+            and herbal wellness. We take island harvests — pineapple, jackfruit, banana,
+            karavila, kohila, and Heen Bovitiya — and preserve them with low-temperature
+            dehydration so kitchens can cook, and snackers can eat, without chemicals.
           </p>
           <p>
-            We believe that premium nutrition should be accessible to everyone. Combining
-            artisanal expertise with modern low-temperature dehydration techniques, we deliver
-            value-added snacks that are as vibrant as they are nutritious.
+            The range is labelled in English, Sinhala, and Tamil. Fruit packs are eaten as
+            they are. Vegetable packs rehydrate in under an hour for curry, mallum, and
+            tempering. Orders go through WhatsApp, not a shopping cart.
           </p>
           <Link href="/about" className="btn btn-primary">
             About Us

@@ -1,3 +1,4 @@
+import { asset } from "@/lib/site";
 import styles from "./SiteImage.module.css";
 
 type Props = {
@@ -23,7 +24,7 @@ export default function SiteImage({
     return (
       // eslint-disable-next-line @next/next/no-img-element
       <img
-        src={src}
+        src={asset(src)}
         alt={alt}
         className={`${styles.fill} ${className}`}
         loading={priority ? "eager" : "lazy"}
@@ -35,7 +36,7 @@ export default function SiteImage({
   return (
     // eslint-disable-next-line @next/next/no-img-element
     <img
-      src={src}
+      src={asset(src)}
       alt={alt}
       width={width}
       height={height}

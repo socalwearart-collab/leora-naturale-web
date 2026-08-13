@@ -12,13 +12,17 @@ import CertificationsSection from "@/components/CertificationsSection";
 import FAQSection from "@/components/FAQSection";
 import ContactForm from "@/components/ContactForm";
 import NewsletterSection from "@/components/NewsletterSection";
-import { getFeaturedProducts } from "@/lib/data";
+import JsonLd from "@/components/JsonLd";
+import { getFaqs, getFeaturedProducts } from "@/lib/data";
+import { faqJsonLd, itemListJsonLd } from "@/lib/seo";
 
 export default function HomePage() {
   const featuredProducts = getFeaturedProducts();
 
   return (
     <>
+      <JsonLd data={faqJsonLd(getFaqs())} />
+      <JsonLd data={itemListJsonLd()} />
       <Hero />
       <BrandBanner />
       <AboutSection />

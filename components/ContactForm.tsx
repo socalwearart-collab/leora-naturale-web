@@ -2,44 +2,35 @@
 
 import { FormEvent, useState } from "react";
 import { CONTACT_EMAIL, CONTACT_PHONE, getWhatsAppOrderLink } from "@/lib/data";
+import { getWhatsAppLink } from "@/lib/site";
 import styles from "./ContactForm.module.css";
 
 export default function ContactForm() {
-  const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
-  const [errorMessage, setErrorMessage] = useState("");
+  const [status, setStatus] = useState<"idle" | "success">("idle");
 
-  async function handleSubmit(event: FormEvent<HTMLFormElement>) {
+  function handleSubmit(event: FormEvent<HTMLFormElement>) {
     event.preventDefault();
-    setStatus("loading");
-    setErrorMessage("");
+    const form = event.currentTarget;
+    const data = new FormData(form);
+    const name = String(data.get("name") || "").trim();
+    const email = String(data.get("email") || "").trim();
+    const phone = String(data.get("phone") || "").trim();
+    const message = String(data.get("message") || "").trim();
 
-    const formData = new FormData(event.currentTarget);
-    const payload = {
-      name: formData.get("name") as string,
-      email: formData.get("email") as string,
-      phone: formData.get("phone") as string,
-      message: formData.get("message") as string,
-    };
+    const text = [
+      `Hello Leora Naturale, I would like to get in touch.`,
+      `Name: ${name}`,
+      `Email: ${email}`,
+      phone ? `Phone: ${phone}` : "",
+      "",
+      message,
+    ]
+      .filter(Boolean)
+      .join("\n");
 
-    try {
-      const response = await fetch("/api/contact", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(payload),
-      });
-
-      const data = await response.json();
-
-      if (!response.ok) {
-        throw new Error(data.error || "Something went wrong.");
-      }
-
-      setStatus("success");
-      event.currentTarget.reset();
-    } catch (error) {
-      setStatus("error");
-      setErrorMessage(error instanceof Error ? error.message : "Something went wrong.");
-    }
+    window.open(getWhatsAppLink(text), "_blank", "noopener,noreferrer");
+    setStatus("success");
+    form.reset();
   }
 
   return (
@@ -47,10 +38,12 @@ export default function ContactForm() {
       <div className={`container ${styles.grid}`}>
         <div className={styles.info}>
           <span className="section-label">Get in Touch</span>
-          <h2 className="section-title">We&apos;d Love to <em>Hear From You</em></h2>
+          <h2 className="section-title">
+            We&apos;d Love to <em>Hear From You</em>
+          </h2>
           <p className="section-subtitle">
-            Have questions about our products or want to place a bulk order?
-            Reach out and we&apos;ll respond as soon as possible.
+            Orders, wholesale, and product questions go through WhatsApp or email.
+            A person at Leora Naturale replies with pack sizes, price, and delivery.
           </p>
 
           <div className={styles.details}>
@@ -64,7 +57,12 @@ export default function ContactForm() {
             </div>
             <div>
               <h4>Order on WhatsApp</h4>
-              <a href={getWhatsAppOrderLink()} target="_blank" rel="noopener noreferrer" className="btn btn-whatsapp">
+              <a
+                href={getWhatsAppOrderLink()}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-whatsapp"
+              >
                 Chat on WhatsApp
               </a>
             </div>
@@ -86,19 +84,25 @@ export default function ContactForm() {
           </div>
           <div className={styles.field}>
             <label htmlFor="message">Message</label>
-            <textarea id="message" name="message" required rows={5} placeholder="How can we help you?" />
+            <textarea
+              id="message"
+              name="message"
+              required
+              rows={5}
+              placeholder="How can we help you?"
+            />
           </div>
 
           {status === "success" && (
-            <p className={styles.success}>Thank you! We&apos;ll get back to you shortly.</p>
-          )}
-          {status === "error" && (
-            <p className={styles.error}>{errorMessage}</p>
+            <p className={styles.success}>WhatsApp is opening with your message.</p>
           )}
 
-          <button type="submit" className="btn btn-primary" disabled={status === "loading"}>
-            {status === "loading" ? "Sending..." : "Send Message"}
+          <button type="submit" className="btn btn-primary">
+            Send on WhatsApp
           </button>
+          <a className={styles.mailFallback} href={`mailto:${CONTACT_EMAIL}`}>
+            or email {CONTACT_EMAIL}
+          </a>
         </form>
       </div>
     </section>

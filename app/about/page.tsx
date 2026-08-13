@@ -1,16 +1,27 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import SiteImage from "@/components/SiteImage";
+import JsonLd from "@/components/JsonLd";
 import { IMAGES } from "@/lib/images";
+import { breadcrumbJsonLd } from "@/lib/seo";
 import styles from "./page.module.css";
 
-export const metadata = {
-  title: "About Us | Leora Naturale",
-  description: "Learn about Leora Naturale's mission to deliver premium dehydrated natural food from Sri Lanka.",
+export const metadata: Metadata = {
+  title: "About Leora Naturale",
+  description:
+    "Leora Naturale is a Sri Lankan brand that preserves fruit, traditional vegetables, and herbs with low-temperature dehydration. No chemical preservatives, no added sugar, product of Sri Lanka.",
+  alternates: { canonical: "/about/" },
 };
 
 export default function AboutPage() {
   return (
     <>
+      <JsonLd
+        data={breadcrumbJsonLd([
+          { name: "Home", path: "/" },
+          { name: "About", path: "/about/" },
+        ])}
+      />
       <section className={styles.hero}>
         <div className="container">
           <span className="section-label">Our Story</span>
@@ -18,8 +29,8 @@ export default function AboutPage() {
             Unveiling Our <em>Natural Legacy</em>
           </h1>
           <p className="section-subtitle">
-            Step into the world of Leora Naturale, where the essence of ancient Sri Lankan
-            wellness traditions fuses with contemporary healthy living.
+            Leora Naturale preserves Sri Lankan harvests so families can snack and cook
+            without artificial colours, flavours, or preservatives.
           </p>
         </div>
       </section>
@@ -27,20 +38,28 @@ export default function AboutPage() {
       <section className={`section ${styles.content}`}>
         <div className={`container ${styles.grid}`}>
           <div>
-            <h2 className="section-title">Our Commitment to <em>Quality and Health</em></h2>
+            <h2 className="section-title">
+              Who <em>Leora Naturale</em> is
+            </h2>
             <p>
-              We believe that premium nutrition should be accessible to everyone. At Leora Naturale,
-              we combine artisanal expertise with modern preservation techniques to deliver value-added
-              snacks that are as vibrant as they are nutritious.
+              Leora Naturale is a food brand based in Sri Lanka. The name sits on every pack
+              with the Sinhala line රැකි ගුණි ස්වභාවික — preserved quality, naturally.
             </p>
             <p>
-              We utilize advanced low-temperature dehydration technology to lock in nutrients while
-              preserving the vibrant, natural flavors of our ingredients. Our process ensures that
-              every value-added snack you enjoy is packed with artisanal quality and maximum health benefits.
+              The company uses low-temperature dehydration: water is removed slowly so
+              vitamins, colour, and flavour stay in the fruit or vegetable. No chemical
+              preservative is added. Sealed packs keep for up to twelve months in a cool,
+              dry cupboard.
             </p>
             <p>
-              Our mission is to empower your daily wellness journey with products that honor the natural
-              essence of every ingredient — chemical-free, preservative-free, and crafted with care.
+              The catalogue covers fruit snacks (pineapple, banana, waraka), traditional
+              vegetables (kos, polos, alu kesel, karavila), the aquatic plant kohila
+              (<em>Lasia spinosa</em>), and the herb Heen Bovitiya (<em>Osbeckia octandra</em>).
+              Several vegetables are also packed with a Sri Lankan spice blend.
+            </p>
+            <p>
+              Orders are taken on WhatsApp and email. There is no automated checkout. A
+              person confirms pack size, price in Sri Lankan rupees, and delivery.
             </p>
             <Link href="/products" className="btn btn-primary" style={{ marginTop: "1.5rem" }}>
               Explore Products
@@ -49,7 +68,7 @@ export default function AboutPage() {
           <div className={styles.imageWrap}>
             <SiteImage
               src={IMAGES.aboutPage}
-              alt="Natural ingredients and wellness"
+              alt="Natural ingredients used by Leora Naturale in Sri Lanka"
               className={styles.image}
             />
           </div>
@@ -64,19 +83,19 @@ export default function AboutPage() {
           <div className={styles.valueGrid}>
             <div className={styles.valueCard}>
               <h3>100% Natural</h3>
-              <p>No artificial preservatives, colors, or additives. Just pure, honest ingredients.</p>
+              <p>No artificial preservatives, colours, or additives. The ingredient on the pack is the food inside it.</p>
             </div>
             <div className={styles.valueCard}>
-              <h3>Artisanal Craft</h3>
-              <p>Traditional knowledge meets modern dehydration science for the best of both worlds.</p>
+              <h3>Low-temperature craft</h3>
+              <p>Gentle dehydration instead of frying or high heat, so nutrients and island flavour survive.</p>
             </div>
             <div className={styles.valueCard}>
-              <h3>Sri Lankan Heritage</h3>
-              <p>Rooted in the rich botanical traditions of our island home.</p>
+              <h3>Sri Lankan harvests</h3>
+              <p>Fruit, vegetables, and herbs grown and packed in Sri Lanka, labelled in English, Sinhala, and Tamil.</p>
             </div>
             <div className={styles.valueCard}>
-              <h3>Wellness First</h3>
-              <p>Every product is designed to support your health-conscious lifestyle.</p>
+              <h3>Kitchen and snack</h3>
+              <p>Eat fruit packs as they are. Rehydrate vegetable packs for curry, mallum, and tempering.</p>
             </div>
           </div>
         </div>

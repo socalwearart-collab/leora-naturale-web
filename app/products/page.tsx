@@ -4,8 +4,10 @@ import { getProducts } from "@/lib/data";
 import styles from "./page.module.css";
 
 export const metadata = {
-  title: "Products | Leora Naturale",
-  description: "Browse our full range of dehydrated snacks, herbal teas, and wellness powders.",
+  title: "Dehydrated Snacks and Herbal Products",
+  description:
+    "Shop Leora Naturale dehydrated pineapple, waraka, kos, polos, banana, karavila, kohila, and Heen Bovitiya. Preservative-free food from Sri Lanka. Order on WhatsApp.",
+  alternates: { canonical: "/products/" },
 };
 
 export default function ProductsPage() {

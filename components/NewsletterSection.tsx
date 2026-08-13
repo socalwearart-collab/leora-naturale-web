@@ -1,6 +1,7 @@
 "use client";
 
 import { FormEvent, useState } from "react";
+import { CONTACT_EMAIL } from "@/lib/data";
 import styles from "./NewsletterSection.module.css";
 
 export default function NewsletterSection() {
@@ -9,10 +10,12 @@ export default function NewsletterSection() {
 
   function handleSubmit(event: FormEvent) {
     event.preventDefault();
-    if (email.trim()) {
-      setSubmitted(true);
-      setEmail("");
-    }
+    if (!email.trim()) return;
+    const subject = encodeURIComponent("Subscribe me to Leora Naturale updates");
+    const body = encodeURIComponent(`Please add ${email.trim()} to the Leora Naturale list.`);
+    window.location.href = `mailto:${CONTACT_EMAIL}?subject=${subject}&body=${body}`;
+    setSubmitted(true);
+    setEmail("");
   }
 
   return (

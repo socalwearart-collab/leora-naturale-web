@@ -35,6 +35,9 @@ export default function Header() {
               {link.label}
             </Link>
           ))}
+          <Link href="/products" className={`btn btn-primary ${styles.shopBtn}`} onClick={() => setMenuOpen(false)}>
+            Shop
+          </Link>
         </nav>
 
         <button

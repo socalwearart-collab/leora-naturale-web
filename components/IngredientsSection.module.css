@@ -31,7 +31,13 @@
   font-family: var(--font-heading), Georgia, serif;
   font-size: 1.1rem;
   color: var(--forest);
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.25rem;
+}
+
+.latin {
+  font-size: 0.8rem !important;
+  color: var(--earth) !important;
+  margin-bottom: 0.6rem;
 }
 
 .card p {

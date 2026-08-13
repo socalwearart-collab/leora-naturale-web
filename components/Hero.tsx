@@ -32,6 +32,11 @@ export default function Hero() {
             Our Story
           </Link>
         </div>
+        <ul className={styles.trust}>
+          <li>100% Natural</li>
+          <li>No Preservatives</li>
+          <li>Product of Sri Lanka</li>
+        </ul>
         <a href="#product-range" className={styles.scrollHint}>
           Scroll to explore
           <span>↓</span>

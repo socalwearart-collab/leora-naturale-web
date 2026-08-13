@@ -1,54 +1,59 @@
-# Leora Naturale Website
+# Leora Naturale
 
-Modern brand website for [Leora Naturale](https://www.leoranaturale.com) — premium dehydrated snacks and herbal wellness products from Sri Lanka.
+**Live website:** [https://socalwearart-collab.github.io/leora-naturale/](https://socalwearart-collab.github.io/leora-naturale/)
 
-Inspired by the live Wix site and the official pack artwork (pineapple, kos, waraka, polos, banana, ash plantain, karavila, kohila, and Heen Bovitiya).
+Public site for [Leora Naturale](https://www.leoranaturale.com) — preservative-free dehydrated fruit, traditional vegetables, and herbal wellness from Sri Lanka.
 
-## Features
+This repository **is** the website. The public pages are built as static files and served by **GitHub Pages**. There is no Vercel app and no need to run a local server to view the live site.
 
-- Hero banner, 15-product catalog, category browsing
-- Official bilingual pack labels (English + Sinhala)
-- About page with brand story
-- Contact form API with validation
-- WhatsApp ordering integration
-- FAQ, testimonials, newsletter sections
-- Fully responsive design
+## Public link
 
-## Tech Stack
+| What | URL |
+|------|-----|
+| Live site (use this) | https://socalwearart-collab.github.io/leora-naturale/ |
+| Product catalogue | https://socalwearart-collab.github.io/leora-naturale/products/ |
+| About | https://socalwearart-collab.github.io/leora-naturale/about/ |
+| Source | https://github.com/socalwearart-collab/leora-naturale |
+| Planned custom domain | www.leoranaturale.com (attach later) |
 
-- **Frontend:** Next.js 14, React 18, TypeScript
-- **Backend API:** Next.js API Routes (`/api/products`, `/api/contact`, `/api/health`)
-- **Hosting:** Vercel (recommended) or any Node.js host
+`localhost` only appears if someone runs `npm run dev` on their own computer. That is optional for editing. Visitors use the GitHub Pages link above.
 
-## Local Development
+## Stack
+
+- Next.js 14 static export (`output: "export"`)
+- GitHub Pages from the `gh-pages` branch
+- WhatsApp + email ordering (no checkout cart, no server API)
+
+## Local preview (optional)
 
 ```bash
 npm install
 npm run dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000).
+Open http://localhost:3000 while that command is running. Close the terminal and localhost stops — that is expected.
 
-## Deploy to Vercel (Recommended)
+To rebuild the public site after edits:
 
-1. Push this repo to GitHub
-2. Go to [vercel.com](https://vercel.com) → Import Project → select this repo
-3. Deploy (zero config needed for Next.js)
-4. Add custom domain `www.leoranaturale.com` in Vercel → Settings → Domains
-5. Update DNS at your domain registrar:
-   - `CNAME` record: `www` → `cname.vercel-dns.com`
-   - `A` record: `@` → `76.76.21.21` (Vercel apex)
+```bash
+npm run build:pages
+```
 
-## API Endpoints
+Then publish the `out/` folder to the `gh-pages` branch.
 
-| Endpoint | Method | Description |
-|----------|--------|-------------|
-| `/api/health` | GET | Health check |
-| `/api/products` | GET | Product catalog JSON |
-| `/api/contact` | POST | Submit contact form |
+## Custom domain later
+
+1. Add a `CNAME` file with `www.leoranaturale.com` (see `internal/DEPLOY.md`).
+2. Rebuild **without** `NEXT_PUBLIC_BASE_PATH` so asset paths sit at the domain root.
+3. Point DNS: `www` CNAME → `socalwearart-collab.github.io`.
+
+The site stays public. A custom domain does not require a private repo.
+
+## Internal notes
+
+Brand, deploy, and SEO notes live in [`internal/`](./internal/). They stay in this public repo but are **not** part of the published website.
 
 ## Contact
 
 - Email: leoranaturale@gmail.com
-- Phone: 071 8147561
-- WhatsApp: +94 071 8147561
+- Phone / WhatsApp: 071 814 7561

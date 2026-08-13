@@ -5,7 +5,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "build:pages": "node scripts/build-pages.mjs",
+    "start": "npx --yes serve out",
     "lint": "next lint"
   },
   "dependencies": {

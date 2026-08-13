@@ -4,8 +4,10 @@ import { getBlogPosts, formatDate } from "@/lib/data";
 import styles from "./page.module.css";
 
 export const metadata = {
-  title: "Blog | Leora Naturale",
-  description: "News, insights, and stories about natural dehydration and Sri Lankan wellness.",
+  title: "Journal",
+  description:
+    "Notes on low-temperature dehydration, Heen Bovitiya (Osbeckia octandra), and preservative-free Sri Lankan food from Leora Naturale.",
+  alternates: { canonical: "/blog/" },
 };
 
 export default function BlogPage() {
