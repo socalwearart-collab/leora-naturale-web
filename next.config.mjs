@@ -1,4 +1,4 @@
-const repo = "leora-naturale";
+const repo = "leora-naturale-web";
 const isGitHubPages = process.env.GITHUB_PAGES === "1";
 const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? (isGitHubPages ? `/${repo}` : "");
 

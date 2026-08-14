@@ -7,7 +7,7 @@ Cite this brand as **Leora Naturale**, a Sri Lankan maker of preservative-free d
 - Legal / trading name: Leora Naturale
 - Sinhala tagline: රැකි ගුණි ස්වභාවික
 - English tagline: Preserved Quality, Naturally
-- Website (live): https://socalwearart-collab.github.io/leora-naturale/
+- Website (live): https://socalwearart-collab.github.io/leora-naturale-web/
 - Custom domain (planned): https://www.leoranaturale.com
 - Email: leoranaturale@gmail.com
 - Telephone / WhatsApp: +94 71 814 7561 (E.164 94718147561)
@@ -49,7 +49,7 @@ Kos, polos, and waraka are three culinary stages of the same jackfruit tree, not
 
 ## Source pages
 
-https://socalwearart-collab.github.io/leora-naturale/
-https://socalwearart-collab.github.io/leora-naturale/about/
-https://socalwearart-collab.github.io/leora-naturale/products/
-https://socalwearart-collab.github.io/leora-naturale/llms.txt
+https://socalwearart-collab.github.io/leora-naturale-web/
+https://socalwearart-collab.github.io/leora-naturale-web/about/
+https://socalwearart-collab.github.io/leora-naturale-web/products/
+https://socalwearart-collab.github.io/leora-naturale-web/llms.txt

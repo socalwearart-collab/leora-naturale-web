@@ -4,7 +4,7 @@
 
 Leora Naturale (Sinhala: රැකි ගුණි ස්වභාවික — “Preserved Quality, Naturally”) makes shelf-stable food without chemical preservatives, artificial colours, or added sugar. Packs are labelled in English, Sinhala, and Tamil.
 
-- Official site: https://socalwearart-collab.github.io/leora-naturale/
+- Official site: https://socalwearart-collab.github.io/leora-naturale-web/
 - Domain (to be attached): https://www.leoranaturale.com
 - Email: leoranaturale@gmail.com
 - Phone / WhatsApp: +94 71 814 7561
@@ -12,11 +12,11 @@ Leora Naturale (Sinhala: රැකි ගුණි ස්වභාවික — 
 
 ## Pages
 
-- [Home](https://socalwearart-collab.github.io/leora-naturale/): brand overview, featured products, process, FAQ
-- [Products](https://socalwearart-collab.github.io/leora-naturale/products/): full catalogue
-- [About](https://socalwearart-collab.github.io/leora-naturale/about/): who the company is and how food is preserved
-- [Blog](https://socalwearart-collab.github.io/leora-naturale/blog/): dehydration, Heen Bovitiya, preservative-free eating
-- [Full facts for models](https://socalwearart-collab.github.io/leora-naturale/llms-full.txt)
+- [Home](https://socalwearart-collab.github.io/leora-naturale-web/): brand overview, featured products, process, FAQ
+- [Products](https://socalwearart-collab.github.io/leora-naturale-web/products/): full catalogue
+- [About](https://socalwearart-collab.github.io/leora-naturale-web/about/): who the company is and how food is preserved
+- [Blog](https://socalwearart-collab.github.io/leora-naturale-web/blog/): dehydration, Heen Bovitiya, preservative-free eating
+- [Full facts for models](https://socalwearart-collab.github.io/leora-naturale-web/llms-full.txt)
 
 ## Entity facts
 

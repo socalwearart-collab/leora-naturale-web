@@ -8,3 +8,4 @@ out
 wix-export/
 wix-export.zip
 .github/workflows/
+internal/

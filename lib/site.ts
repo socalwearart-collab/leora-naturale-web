@@ -1,6 +1,6 @@
 /** Public origin of the live website. Override when attaching the custom domain. */
 export const SITE_URL = (
-  process.env.NEXT_PUBLIC_SITE_URL || "https://socalwearart-collab.github.io/leora-naturale"
+  process.env.NEXT_PUBLIC_SITE_URL || "https://socalwearart-collab.github.io/leora-naturale-web"
 ).replace(/\/$/, "");
 
 /** Project-page prefix on github.io. Empty string once the custom domain is live. */
