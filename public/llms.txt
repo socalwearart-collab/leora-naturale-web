@@ -4,10 +4,8 @@
 
 Leora Naturale (Sinhala: රැකි ගුණි ස්වභාවික — “Preserved Quality, Naturally”) makes shelf-stable food without chemical preservatives, artificial colours, or added sugar. Packs are labelled in English, Sinhala, and Tamil.
 
-- Official site: https://socalwearart-collab.github.io/leora-naturale-web/
-- Domain (to be attached): https://www.leoranaturale.com
+- Official site: https://www.leoranaturale.com
 - Email: leoranaturale@gmail.com
-- Phone / WhatsApp: +94 71 814 7561
 - Country of origin: Sri Lanka
 
 ## Pages

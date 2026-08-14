@@ -1,5 +1,5 @@
 import { getProducts, Product } from "@/lib/data";
-import { absoluteUrl, CONTACT_EMAIL, CONTACT_PHONE_E164, SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "@/lib/site";
+import { absoluteUrl, CONTACT_EMAIL, SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "@/lib/site";
 
 export const ORGANIZATION_ID = `${SITE_URL}/#organization`;
 export const WEBSITE_ID = `${SITE_URL}/#website`;
@@ -16,7 +16,6 @@ export function organizationJsonLd() {
     image: absoluteUrl("/images/logo.jpg"),
     description: SITE_DESCRIPTION,
     email: CONTACT_EMAIL,
-    telephone: CONTACT_PHONE_E164,
     foundingLocation: {
       "@type": "Place",
       name: "Sri Lanka",
@@ -41,7 +40,6 @@ export function organizationJsonLd() {
         "@type": "ContactPoint",
         contactType: "sales",
         email: CONTACT_EMAIL,
-        telephone: CONTACT_PHONE_E164,
         availableLanguage: ["en", "si", "ta"],
       },
     ],

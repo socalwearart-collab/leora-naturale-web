@@ -1,7 +1,7 @@
 "use client";
 
 import { FormEvent, useState } from "react";
-import { CONTACT_EMAIL, CONTACT_PHONE, getWhatsAppOrderLink } from "@/lib/data";
+import { CONTACT_EMAIL, getWhatsAppOrderLink } from "@/lib/data";
 import { getWhatsAppLink } from "@/lib/site";
 import styles from "./ContactForm.module.css";
 
@@ -50,10 +50,6 @@ export default function ContactForm() {
             <div>
               <h4>Email Us</h4>
               <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>
-            </div>
-            <div>
-              <h4>Call Us</h4>
-              <a href={`tel:${CONTACT_PHONE.replace(/\s/g, "")}`}>{CONTACT_PHONE}</a>
             </div>
             <div>
               <h4>Order on WhatsApp</h4>

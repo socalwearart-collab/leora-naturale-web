@@ -9,4 +9,4 @@ This repository is **public website only**. GitHub Pages and DNS attach here. In
 
 Static Next.js export. Orders go through WhatsApp / email, not a checkout cart.
 
-Contact: leoranaturale@gmail.com · 071 814 7561
+Contact: leoranaturale@gmail.com
