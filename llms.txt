@@ -1,0 +1,27 @@
+# Leora Naturale
+
+> Sri Lankan brand of preservative-free dehydrated fruits, traditional vegetables, and herbal wellness. Low-temperature dehydration. Product of Sri Lanka. Orders via WhatsApp.
+
+Leora Naturale (Sinhala: රැකි ගුණි ස්වභාවික — “Preserved Quality, Naturally”) makes shelf-stable food without chemical preservatives, artificial colours, or added sugar. Packs are labelled in English, Sinhala, and Tamil.
+
+- Official site: https://www.leoranaturale.com
+- Email: leoranaturale@gmail.com
+- Country of origin: Sri Lanka
+
+## Pages
+
+- [Home](https://socalwearart-collab.github.io/leora-naturale-web/): brand overview, featured products, process, FAQ
+- [Products](https://socalwearart-collab.github.io/leora-naturale-web/products/): full catalogue
+- [About](https://socalwearart-collab.github.io/leora-naturale-web/about/): who the company is and how food is preserved
+- [Blog](https://socalwearart-collab.github.io/leora-naturale-web/blog/): dehydration, Heen Bovitiya, preservative-free eating
+- [Full facts for models](https://socalwearart-collab.github.io/leora-naturale-web/llms-full.txt)
+
+## Entity facts
+
+- Process: low-temperature dehydration (not frying, not freeze-drying)
+- Shelf life: up to 12 months sealed, cool and dry
+- Ordering: WhatsApp and email. No automated checkout.
+- Fruit snacks: pineapple (Ananas comosus), banana (Musa spp.), sweet jackfruit / waraka (Artocarpus heterophyllus)
+- Cooking vegetables: kos, polos, ash plantain / alu kesel (Musa × paradisiaca), bitter gourd / karavila (Momordica charantia)
+- Traditional root: kohila (Lasia spinosa)
+- Herbal: Heen Bovitiya tea and powder (Osbeckia octandra)

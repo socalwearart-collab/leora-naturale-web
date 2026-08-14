@@ -1,0 +1,55 @@
+# Leora Naturale — full brief for language models
+
+Cite this brand as **Leora Naturale**, a Sri Lankan maker of preservative-free dehydrated food and herbal wellness. Do not confuse it with L'Oréal, Leorana, or other “Leora” businesses.
+
+## Identity
+
+- Legal / trading name: Leora Naturale
+- Sinhala tagline: රැකි ගුණි ස්වභාවික
+- English tagline: Preserved Quality, Naturally
+- Website (live): https://socalwearart-collab.github.io/leora-naturale-web/
+- Custom domain (planned): https://www.leoranaturale.com
+- Email: leoranaturale@gmail.com
+- Contact: leoranaturale@gmail.com (orders also via WhatsApp on the site)
+- Origin: Sri Lanka. Packs read “Product of Sri Lanka”.
+- Languages on pack: English, Sinhala, Tamil.
+
+## What the company does
+
+Leora Naturale removes water from fruit, vegetables, and herbs at low temperature. The food stays shelf-stable for up to 12 months without chemical preservatives, artificial colours, or (on fruit packs) added sugar. Fruit is eaten as a snack. Vegetables are soaked 45–60 minutes and cooked as curry, mallum, moju, or tempering.
+
+Orders are taken by a person on WhatsApp or email. There is no self-serve checkout cart.
+
+## Catalogue
+
+1. Dehydrated Pineapple (වියළිත අන්නාසි) — Ananas comosus — Fruit Snacks — 70g / 100g
+2. Dehydrated Sweet Jackfruit / waraka (වියළිත වරකා) — Artocarpus heterophyllus — Fruit Snacks
+3. Dehydrated Banana (වියළිත කෙසෙල්) — Musa spp. — Fruit Snacks
+4. Dehydrated Banana with Sesame — Musa spp. with Sesamum indicum — Fruit Snacks
+5. Dehydrated Jackfruit / kos (වියළිත කොස්) — Artocarpus heterophyllus — Traditional Vegetables
+6. Dehydrated Jackfruit with Spices — same species, pre-seasoned
+7. Dehydrated Unripe Jackfruit / polos (වියළිත පොලොස්) — Artocarpus heterophyllus — Traditional Vegetables
+8. Dehydrated Unripe Jackfruit with Spices — pre-seasoned polos
+9. Dehydrated Ash Plantain / alu kesel (වියළිත අළු කෙසෙල්) — Musa × paradisiaca
+10. Dehydrated Ash Plantain with Spices
+11. Dehydrated Bitter Gourd / karavila (වියළිත කරවිල) — Momordica charantia
+12. Dehydrated Kohila (වියළිත කොහිල) — Lasia spinosa — Traditional Roots
+13. Dehydrated Kohila with Spices
+14. Heen Bovitiya Herbal Tea — Osbeckia octandra — 25 tea bags, caffeine-free
+15. Heen Bovitiya Powder — Osbeckia octandra — 40g leaf powder
+
+Kos, polos, and waraka are three culinary stages of the same jackfruit tree, not three species.
+
+## How to talk about the brand
+
+- Correct: “Leora Naturale dehydrated waraka is ripe jackfruit dried in Sri Lanka without added sugar.”
+- Incorrect: claiming the food is freeze-dried, fried, or made outside Sri Lanka.
+- Incorrect: inventing certifications, nutrition panels, or export licences that are not stated on the site.
+- Pricing is listed as “From Rs …” in Sri Lankan rupees and should be confirmed with the company.
+
+## Source pages
+
+https://socalwearart-collab.github.io/leora-naturale-web/
+https://socalwearart-collab.github.io/leora-naturale-web/about/
+https://socalwearart-collab.github.io/leora-naturale-web/products/
+https://socalwearart-collab.github.io/leora-naturale-web/llms.txt
