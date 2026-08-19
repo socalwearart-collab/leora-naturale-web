@@ -42,7 +42,7 @@ export default function Header() {
               href={store.href}
               target="_blank"
               rel="noopener noreferrer"
-              className={styles.navLink}
+              className={styles.storeLink}
               onClick={() => setMenuOpen(false)}
             >
               {store.label}

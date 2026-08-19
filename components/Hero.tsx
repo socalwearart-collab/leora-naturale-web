@@ -2,6 +2,7 @@ import Link from "next/link";
 import Logo from "./Logo";
 import SiteImage from "./SiteImage";
 import { IMAGES } from "@/lib/images";
+import { STORE_LINKS } from "@/lib/site";
 import styles from "./Hero.module.css";
 
 export default function Hero() {
@@ -27,9 +28,18 @@ export default function Hero() {
           <Link href="/products" className="btn btn-primary">
             Shop Collection
           </Link>
-          <Link href="/about" className="btn btn-outline" style={{ color: "#fff", borderColor: "#fff" }}>
-            Our Story
-          </Link>
+          {STORE_LINKS.map((store) => (
+            <a
+              key={store.href}
+              href={store.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="btn btn-outline"
+              style={{ color: "#fff", borderColor: "#fff" }}
+            >
+              {store.label}
+            </a>
+          ))}
         </div>
         <ul className={styles.trust}>
           <li>100% Natural</li>

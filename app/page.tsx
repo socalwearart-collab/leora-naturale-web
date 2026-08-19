@@ -24,8 +24,8 @@ export default function HomePage() {
     <>
       <JsonLd data={faqJsonLd(getFaqs())} />
       <JsonLd data={itemListJsonLd()} />
-      <StoreBar variant="top" />
       <Hero />
+      <StoreBar variant="top" />
       <BrandBanner />
       <AboutSection />
       <ProductGrid

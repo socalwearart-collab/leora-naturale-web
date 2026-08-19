@@ -54,6 +54,21 @@
   width: 100%;
 }
 
+.storeLink {
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--forest-dark);
+  background: var(--gold-light);
+  padding: 0.45rem 0.95rem;
+  border-radius: 999px;
+  transition: background var(--transition), color var(--transition);
+}
+
+.storeLink:hover {
+  background: var(--gold);
+  color: var(--forest-dark);
+}
+
 .shopBtn {
   padding: 0.55rem 1.25rem;
   font-size: 0.85rem;
