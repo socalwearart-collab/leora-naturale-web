@@ -10,11 +10,11 @@ Leora Naturale (Sinhala: රැකි ගුණි ස්වභාවික — 
 
 ## Pages
 
-- [Home](https://socalwearart-collab.github.io/leora-naturale-web/): brand overview, featured products, process, FAQ
-- [Products](https://socalwearart-collab.github.io/leora-naturale-web/products/): full catalogue
-- [About](https://socalwearart-collab.github.io/leora-naturale-web/about/): who the company is and how food is preserved
-- [Blog](https://socalwearart-collab.github.io/leora-naturale-web/blog/): dehydration, Heen Bovitiya, preservative-free eating
-- [Full facts for models](https://socalwearart-collab.github.io/leora-naturale-web/llms-full.txt)
+- [Home](https://www.leoranaturale.com/): brand overview, featured products, process, FAQ
+- [Products](https://www.leoranaturale.com/products/): full catalogue
+- [About](https://www.leoranaturale.com/about/): who the company is and how food is preserved
+- [Blog](https://www.leoranaturale.com/blog/): dehydration, Heen Bovitiya, preservative-free eating
+- [Full facts for models](https://www.leoranaturale.com/llms-full.txt)
 
 ## Entity facts
 
