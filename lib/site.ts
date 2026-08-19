@@ -18,6 +18,7 @@ export const CONTACT_PHONE = "071 8147561";
 export const CONTACT_PHONE_E164 = "+94718147561";
 export const WHATSAPP_NUMBER = "940718147561";
 export const ORIGIN_COUNTRY = "Sri Lanka";
+export const FACEBOOK_URL = "https://www.facebook.com/p/Leora-Naturale-61587794566990/";
 
 export function asset(path: string): string {
   if (!path) return path;

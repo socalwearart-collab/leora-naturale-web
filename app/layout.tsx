@@ -20,6 +20,8 @@ const inter = Inter({
   display: "swap",
 });
 
+const googleVerification = process.env.NEXT_PUBLIC_GOOGLE_SITE_VERIFICATION;
+
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
@@ -27,13 +29,19 @@ export const metadata: Metadata = {
     template: `%s | ${SITE_NAME}`,
   },
   description: SITE_DESCRIPTION,
+  applicationName: SITE_NAME,
+  category: "food",
   keywords: [
     "Leora Naturale",
+    "Leora Natural",
+    "leoranaturale",
     "dehydrated snacks Sri Lanka",
-    "preservative free food",
+    "preservative free food Sri Lanka",
     "dehydrated jackfruit",
+    "dehydrated jackfruit Sri Lanka",
     "dehydrated pineapple",
     "Heen Bovitiya tea",
+    "Heen Bovitiya herbal tea",
     "Osbeckia octandra",
     "kohila Lasia spinosa",
     "waraka",
@@ -44,7 +52,11 @@ export const metadata: Metadata = {
   creator: SITE_NAME,
   publisher: SITE_NAME,
   alternates: { canonical: "/" },
-  robots: { index: true, follow: true },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: { index: true, follow: true },
+  },
   openGraph: {
     type: "website",
     locale: "en_LK",
@@ -63,6 +75,11 @@ export const metadata: Metadata = {
   icons: {
     icon: "/images/logo.jpg",
     apple: "/images/logo.jpg",
+  },
+  other: {
+    "geo.region": "LK",
+    "geo.placename": "Sri Lanka",
+    ...(googleVerification ? { "google-site-verification": googleVerification } : {}),
   },
 };
 

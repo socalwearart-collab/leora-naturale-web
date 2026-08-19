@@ -4,9 +4,9 @@ import { getBlogPosts, formatDate } from "@/lib/data";
 import styles from "./page.module.css";
 
 export const metadata = {
-  title: "Journal",
+  title: "Dehydration, Heen Bovitiya & Preservative-Free Food",
   description:
-    "Notes on low-temperature dehydration, Heen Bovitiya (Osbeckia octandra), and preservative-free Sri Lankan food from Leora Naturale.",
+    "Notes from Leora Naturale on low-temperature dehydration, Heen Bovitiya (Osbeckia octandra), and preservative-free Sri Lankan food.",
   alternates: { canonical: "/blog/" },
 };
 

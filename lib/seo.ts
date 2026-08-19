@@ -1,5 +1,18 @@
 import { getProducts, Product } from "@/lib/data";
-import { absoluteUrl, CONTACT_EMAIL, SITE_DESCRIPTION, SITE_NAME, SITE_URL } from "@/lib/site";
+import {
+  absoluteUrl,
+  CONTACT_EMAIL,
+  CONTACT_PHONE_E164,
+  FACEBOOK_URL,
+  SITE_DESCRIPTION,
+  SITE_NAME,
+  SITE_URL,
+} from "@/lib/site";
+
+function offerPrice(price: string): string | undefined {
+  const match = price.replace(/,/g, "").match(/(\d+(?:\.\d+)?)/);
+  return match?.[1];
+}
 
 export const ORGANIZATION_ID = `${SITE_URL}/#organization`;
 export const WEBSITE_ID = `${SITE_URL}/#website`;
@@ -10,12 +23,19 @@ export function organizationJsonLd() {
     "@type": ["Organization", "FoodEstablishment"],
     "@id": ORGANIZATION_ID,
     name: SITE_NAME,
-    alternateName: ["Leora Naturale Sri Lanka", "ලියෝරා නැචුරාලේ"],
+    legalName: SITE_NAME,
+    alternateName: [
+      "Leora Naturale Sri Lanka",
+      "Leora Natural",
+      "leoranaturale",
+      "ලියෝරා නැචුරාලේ",
+    ],
     url: SITE_URL,
     logo: absoluteUrl("/images/logo.jpg"),
     image: absoluteUrl("/images/logo.jpg"),
     description: SITE_DESCRIPTION,
     email: CONTACT_EMAIL,
+    telephone: CONTACT_PHONE_E164,
     foundingLocation: {
       "@type": "Place",
       name: "Sri Lanka",
@@ -24,22 +44,34 @@ export function organizationJsonLd() {
         addressCountry: "LK",
       },
     },
-    areaServed: ["LK", "Sri Lanka"],
+    address: {
+      "@type": "PostalAddress",
+      addressCountry: "LK",
+    },
+    areaServed: {
+      "@type": "Country",
+      name: "Sri Lanka",
+    },
     knowsAbout: [
       "low-temperature dehydration",
       "preservative-free snacks",
+      "dehydrated jackfruit",
+      "dehydrated pineapple",
+      "Heen Bovitiya herbal tea",
       "Artocarpus heterophyllus",
       "Osbeckia octandra",
       "Lasia spinosa",
       "Momordica charantia",
       "Sri Lankan dehydrated fruit",
     ],
-    sameAs: ["https://www.leoranaturale.com"],
+    sameAs: [SITE_URL, FACEBOOK_URL],
     contactPoint: [
       {
         "@type": "ContactPoint",
         contactType: "sales",
         email: CONTACT_EMAIL,
+        telephone: CONTACT_PHONE_E164,
+        areaServed: "LK",
         availableLanguage: ["en", "si", "ta"],
       },
     ],
@@ -54,8 +86,9 @@ export function websiteJsonLd() {
     url: SITE_URL,
     name: SITE_NAME,
     description: SITE_DESCRIPTION,
-    inLanguage: ["en", "si"],
+    inLanguage: ["en", "si", "ta"],
     publisher: { "@id": ORGANIZATION_ID },
+    about: { "@id": ORGANIZATION_ID },
   };
 }
 
@@ -64,12 +97,12 @@ export function productJsonLd(product: Product) {
     "@context": "https://schema.org",
     "@type": "Product",
     name: product.name,
-    alternateName: product.nameSinhala,
+    alternateName: [product.nameSinhala, `${product.name} Leora Naturale`].filter(Boolean),
     description: product.longDescription,
     image: absoluteUrl(product.image),
     sku: product.id,
     category: product.category,
-    brand: { "@id": ORGANIZATION_ID },
+    brand: { "@type": "Brand", name: SITE_NAME, url: SITE_URL },
     countryOfOrigin: "LK",
     material: product.scientificName,
     additionalProperty: [
@@ -81,9 +114,11 @@ export function productJsonLd(product: Product) {
       "@type": "Offer",
       url: absoluteUrl(`/products/${product.id}/`),
       priceCurrency: "LKR",
+      ...(offerPrice(product.price) ? { price: offerPrice(product.price) } : {}),
       availability: product.inStock
         ? "https://schema.org/InStock"
         : "https://schema.org/OutOfStock",
+      itemCondition: "https://schema.org/NewCondition",
       seller: { "@id": ORGANIZATION_ID },
     },
   };

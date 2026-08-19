@@ -16,8 +16,9 @@ export default function Hero() {
         <Logo variant="hero" />
         <p className={styles.eyebrow}>Healthy &amp; Preservative Free</p>
         <h1 className={styles.title}>
-          The Art of <em>Natural</em> Preservation
+          Leora <em>Naturale</em>
         </h1>
+        <p className={styles.headline}>The Art of Natural Preservation</p>
         <p className={styles.subtitle}>
           Premium dehydrated snacks and herbal wellness products crafted in Sri Lanka.
           Artisanal quality, maximum nutrition, zero compromise.

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import Logo from "./Logo";
 import { CONTACT_EMAIL, BRAND_TAGLINE_SINHALA } from "@/lib/data";
+import { FACEBOOK_URL } from "@/lib/site";
 import styles from "./Footer.module.css";
 
 export default function Footer() {
@@ -32,6 +33,11 @@ export default function Footer() {
           <ul>
             <li>
               <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>
+            </li>
+            <li>
+              <a href={FACEBOOK_URL} target="_blank" rel="noopener noreferrer">
+                Facebook
+              </a>
             </li>
           </ul>
         </div>

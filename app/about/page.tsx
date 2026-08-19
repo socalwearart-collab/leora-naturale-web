@@ -26,7 +26,7 @@ export default function AboutPage() {
         <div className="container">
           <span className="section-label">Our Story</span>
           <h1 className="section-title">
-            Unveiling Our <em>Natural Legacy</em>
+            About <em>Leora Naturale</em>
           </h1>
           <p className="section-subtitle">
             Leora Naturale preserves Sri Lankan harvests so families can snack and cook

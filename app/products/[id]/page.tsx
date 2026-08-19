@@ -17,9 +17,22 @@ export function generateMetadata({ params }: Props) {
   const product = getProductById(params.id);
   if (!product) return { title: "Product Not Found" };
   return {
-    title: product.name,
-    description: product.description,
+    title: `${product.name} from Sri Lanka`,
+    description: `${product.description} Buy ${product.name} from Leora Naturale. Product of Sri Lanka. Order on WhatsApp.`,
+    keywords: [
+      product.name,
+      product.nameSinhala,
+      "Leora Naturale",
+      "Sri Lanka",
+      product.scientificName,
+      product.category,
+    ].filter(Boolean) as string[],
     alternates: { canonical: `/products/${product.id}/` },
+    openGraph: {
+      title: `${product.name} | Leora Naturale`,
+      description: product.description,
+      images: [{ url: product.image, alt: product.name }],
+    },
   };
 }
 
