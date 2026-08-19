@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import Logo from "./Logo";
+import { STORE_LINKS } from "@/lib/site";
 import styles from "./Header.module.css";
 
 const navLinks = [
@@ -34,6 +35,18 @@ export default function Header() {
             >
               {link.label}
             </Link>
+          ))}
+          {STORE_LINKS.map((store) => (
+            <a
+              key={store.href}
+              href={store.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className={styles.navLink}
+              onClick={() => setMenuOpen(false)}
+            >
+              {store.label}
+            </a>
           ))}
           <Link href="/products" className={`btn btn-primary ${styles.shopBtn}`} onClick={() => setMenuOpen(false)}>
             Shop

@@ -20,6 +20,11 @@ export const WHATSAPP_NUMBER = "940718147561";
 export const ORIGIN_COUNTRY = "Sri Lanka";
 export const FACEBOOK_URL = "https://www.facebook.com/p/Leora-Naturale-61587794566990/";
 
+export const STORE_LINKS = [
+  { label: "Serendib Market", href: "https://serendibmarket.com/products" },
+  { label: "Daraz", href: "https://www.daraz.lk/shop/lrzyrm1j/" },
+] as const;
+
 export function asset(path: string): string {
   if (!path) return path;
   if (path.startsWith("http://") || path.startsWith("https://") || path.startsWith("data:")) {

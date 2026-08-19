@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Logo from "./Logo";
 import { CONTACT_EMAIL, BRAND_TAGLINE_SINHALA } from "@/lib/data";
-import { FACEBOOK_URL } from "@/lib/site";
+import { FACEBOOK_URL, STORE_LINKS } from "@/lib/site";
 import styles from "./Footer.module.css";
 
 export default function Footer() {
@@ -43,8 +43,16 @@ export default function Footer() {
         </div>
 
         <div>
-          <h4>Newsletter</h4>
-          <p>Be the first to know about new collections and exclusive offers.</p>
+          <h4>Order online</h4>
+          <ul>
+            {STORE_LINKS.map((store) => (
+              <li key={store.href}>
+                <a href={store.href} target="_blank" rel="noopener noreferrer">
+                  {store.label}
+                </a>
+              </li>
+            ))}
+          </ul>
         </div>
       </div>
 
