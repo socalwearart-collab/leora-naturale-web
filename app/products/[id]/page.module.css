@@ -97,6 +97,12 @@
   font-weight: 700;
 }
 
+.orderRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
 .meta {
   background: var(--cream);
   padding: 3rem 0;

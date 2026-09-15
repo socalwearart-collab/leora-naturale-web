@@ -1,31 +1,32 @@
-import { STORE_LINKS } from "@/lib/site";
+import { ORDER_CHANNELS } from "@/lib/site";
 import styles from "./StoreBar.module.css";
 
 type Props = { variant?: "top" | "bottom" };
 
 export default function StoreBar({ variant = "top" }: Props) {
   return (
-    <section className={`${styles.section} ${styles[variant]}`} aria-label="Order from our stores">
+    <section className={`${styles.section} ${styles[variant]}`} id="order" aria-label="How to order">
       <div className={`container ${styles.inner}`}>
-        <p className={styles.eyebrow}>Buy online</p>
+        <p className={styles.eyebrow}>Orders</p>
         <h2 className={styles.title}>
-          Order Leora Naturale from <em>our stores</em>
+          Three ways to <em>order</em>
         </h2>
         <p className={styles.lead}>
-          Same packs, same prices. Shop on Serendib Market or Daraz — or order on WhatsApp.
+          WhatsApp is the fastest. Serendib Market and Daraz are ready if you prefer to pay online.
         </p>
         <div className={styles.cards}>
-          {STORE_LINKS.map((store) => (
+          {ORDER_CHANNELS.map((channel) => (
             <a
-              key={store.href}
-              href={store.href}
+              key={channel.href}
+              href={channel.href}
               target="_blank"
               rel="noopener noreferrer"
               className={styles.card}
             >
-              <span className={styles.cardLabel}>Shop on</span>
-              <span className={styles.cardName}>{store.label}</span>
-              <span className={styles.cardCta}>Open store →</span>
+              <span className={styles.cardLabel}>Order on</span>
+              <span className={styles.cardName}>{channel.label}</span>
+              <span className={styles.cardNote}>{channel.note}</span>
+              <span className={styles.cardCta}>Open →</span>
             </a>
           ))}
         </div>

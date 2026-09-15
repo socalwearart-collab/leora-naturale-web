@@ -24,11 +24,33 @@ export const STORE_LINKS = [
   {
     label: "Serendib Market",
     href: "https://serendibmarket.com/products",
+    note: "Pay online. Island-wide delivery.",
   },
   {
     label: "Daraz",
     href: "https://www.daraz.lk/shop/lrzyrm1j/",
+    note: "Official Leora Naturale shop.",
   },
+] as const;
+
+export const SOCIAL_LINKS = [
+  { label: "Facebook", href: FACEBOOK_URL },
+] as const;
+
+export function getWhatsAppOrderHref(productName?: string): string {
+  const text = productName
+    ? `Hello Leora Naturale, I would like to order ${productName}.`
+    : "Hello Leora Naturale, I would like to place an order.";
+  return `https://api.whatsapp.com/send?phone=${WHATSAPP_NUMBER}&text=${encodeURIComponent(text)}`;
+}
+
+export const ORDER_CHANNELS = [
+  {
+    label: "WhatsApp",
+    href: getWhatsAppOrderHref(),
+    note: "Fastest. We confirm pack size, price, and delivery.",
+  },
+  ...STORE_LINKS,
 ] as const;
 
 export function asset(path: string): string {

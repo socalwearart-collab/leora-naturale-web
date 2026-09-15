@@ -1,7 +1,7 @@
 import Link from "next/link";
 import Logo from "./Logo";
 import { CONTACT_EMAIL, BRAND_TAGLINE_SINHALA } from "@/lib/data";
-import { FACEBOOK_URL, STORE_LINKS } from "@/lib/site";
+import { ORDER_CHANNELS, SOCIAL_LINKS } from "@/lib/site";
 import styles from "./Footer.module.css";
 
 export default function Footer() {
@@ -29,26 +29,28 @@ export default function Footer() {
         </div>
 
         <div>
-          <h4>Get in Touch</h4>
+          <h4>Contact &amp; social</h4>
           <ul>
             <li>
               <a href={`mailto:${CONTACT_EMAIL}`}>{CONTACT_EMAIL}</a>
             </li>
-            <li>
-              <a href={FACEBOOK_URL} target="_blank" rel="noopener noreferrer">
-                Facebook
-              </a>
-            </li>
+            {SOCIAL_LINKS.map((social) => (
+              <li key={social.href}>
+                <a href={social.href} target="_blank" rel="noopener noreferrer">
+                  {social.label}
+                </a>
+              </li>
+            ))}
           </ul>
         </div>
 
         <div>
-          <h4>Order online</h4>
+          <h4>Order</h4>
           <ul>
-            {STORE_LINKS.map((store) => (
-              <li key={store.href}>
-                <a href={store.href} target="_blank" rel="noopener noreferrer">
-                  {store.label}
+            {ORDER_CHANNELS.map((channel) => (
+              <li key={channel.href}>
+                <a href={channel.href} target="_blank" rel="noopener noreferrer">
+                  {channel.label}
                 </a>
               </li>
             ))}

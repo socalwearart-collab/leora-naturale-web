@@ -27,7 +27,10 @@ export default function SiteImage({
         src={asset(src)}
         alt={alt}
         className={`${styles.fill} ${className}`}
+        width={width ?? 1200}
+        height={height ?? 900}
         loading={priority ? "eager" : "lazy"}
+        fetchPriority={priority ? "high" : "low"}
         decoding="async"
       />
     );
@@ -38,10 +41,11 @@ export default function SiteImage({
     <img
       src={asset(src)}
       alt={alt}
-      width={width}
-      height={height}
+      width={width ?? 800}
+      height={height ?? 600}
       className={className}
       loading={priority ? "eager" : "lazy"}
+      fetchPriority={priority ? "high" : "low"}
       decoding="async"
     />
   );

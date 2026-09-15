@@ -3,6 +3,7 @@ import SiteImage from "@/components/SiteImage";
 import JsonLd from "@/components/JsonLd";
 import { notFound } from "next/navigation";
 import { getProductById, getProducts, getWhatsAppOrderLink } from "@/lib/data";
+import { STORE_LINKS } from "@/lib/site";
 import { breadcrumbJsonLd, productJsonLd } from "@/lib/seo";
 import ProductCard from "@/components/ProductCard";
 import styles from "./page.module.css";
@@ -95,14 +96,27 @@ export default function ProductDetailPage({ params }: Props) {
               </ul>
             </div>
 
-            <a
-              href={getWhatsAppOrderLink(product.name)}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn btn-whatsapp"
-            >
-              Order via WhatsApp
-            </a>
+            <div className={styles.orderRow}>
+              <a
+                href={getWhatsAppOrderLink(product.name)}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="btn btn-whatsapp"
+              >
+                Order via WhatsApp
+              </a>
+              {STORE_LINKS.map((store) => (
+                <a
+                  key={store.href}
+                  href={store.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="btn btn-outline"
+                >
+                  {store.label}
+                </a>
+              ))}
+            </div>
           </div>
         </div>
       </section>

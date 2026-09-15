@@ -13,6 +13,7 @@ import FAQSection from "@/components/FAQSection";
 import ContactForm from "@/components/ContactForm";
 import NewsletterSection from "@/components/NewsletterSection";
 import StoreBar from "@/components/StoreBar";
+import SocialFollow from "@/components/SocialFollow";
 import JsonLd from "@/components/JsonLd";
 import { getFaqs, getFeaturedProducts } from "@/lib/data";
 import { faqJsonLd, itemListJsonLd } from "@/lib/seo";
@@ -41,6 +42,7 @@ export default function HomePage() {
       <BlogSection />
       <CertificationsSection />
       <FAQSection />
+      <SocialFollow />
       <ContactForm />
       <StoreBar variant="bottom" />
       <NewsletterSection />
