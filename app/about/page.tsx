@@ -42,20 +42,19 @@ export default function AboutPage() {
               Who <em>Leora Naturale</em> is
             </h2>
             <p>
-              Leora Naturale is a food brand based in Sri Lanka. The name sits on every pack
-              with the Sinhala line රැකි ගුණි ස්වභාවික — preserved quality, naturally.
+              Leora Naturale is a food brand based in Sri Lanka, making dehydrated food and
+              herbal products for kitchens at home and abroad.
             </p>
             <p>
               The company uses low-temperature dehydration: water is removed slowly so
               vitamins, colour, and flavour stay in the fruit or vegetable. No chemical
-              preservative is added. Sealed packs keep for up to twelve months in a cool,
-              dry cupboard.
+              preservative is added. Shelf life depends on the product, usually 6 months to 1 year when
+              sealed in a cool, dry cupboard.
             </p>
             <p>
-              The catalogue covers fruit snacks (pineapple, banana, waraka), traditional
-              vegetables (kos, polos, alu kesel, karavila), the aquatic plant kohila
-              (<em>Lasia spinosa</em>), and the herb Heen Bovitiya (<em>Osbeckia octandra</em>).
-              Several vegetables are also packed with a Sri Lankan spice blend.
+              The range is Kiri Kos (dehydrated mature jackfruit), Heen Bovitiya
+              (<em>Osbeckia octandra</em>) as tea bags and leaf powder, Butterfly Pea Flower
+              (<em>Clitoria ternatea</em>), and Chai Masala, a blend of seven Sri Lankan spices.
             </p>
             <p>
               Orders are taken on WhatsApp and email. There is no automated checkout. A

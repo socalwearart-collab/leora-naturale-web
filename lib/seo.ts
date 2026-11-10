@@ -56,13 +56,13 @@ export function organizationJsonLd() {
       "low-temperature dehydration",
       "preservative-free snacks",
       "dehydrated jackfruit",
-      "dehydrated pineapple",
+      "butterfly pea flower",
+      "chai masala",
       "Heen Bovitiya herbal tea",
       "Artocarpus heterophyllus",
       "Osbeckia octandra",
-      "Lasia spinosa",
-      "Momordica charantia",
-      "Sri Lankan dehydrated fruit",
+      "Clitoria ternatea",
+      "Sri Lankan spices",
     ],
     sameAs: [SITE_URL, FACEBOOK_URL],
     contactPoint: [
@@ -110,17 +110,18 @@ export function productJsonLd(product: Product) {
       { "@type": "PropertyValue", name: "Preservatives", value: "None" },
       { "@type": "PropertyValue", name: "Process", value: "Low-temperature dehydration" },
     ],
-    offers: {
+    offers: (product.variants ?? [{ label: product.weight, price: product.price }]).map((v) => ({
       "@type": "Offer",
+      name: v.label,
       url: absoluteUrl(`/products/${product.id}/`),
       priceCurrency: "LKR",
-      ...(offerPrice(product.price) ? { price: offerPrice(product.price) } : {}),
+      ...(offerPrice(v.price) ? { price: offerPrice(v.price) } : {}),
       availability: product.inStock
         ? "https://schema.org/InStock"
         : "https://schema.org/OutOfStock",
       itemCondition: "https://schema.org/NewCondition",
       seller: { "@id": ORGANIZATION_ID },
-    },
+    })),
   };
 }
 

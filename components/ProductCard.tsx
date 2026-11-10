@@ -24,7 +24,17 @@ export default function ProductCard({ product }: Props) {
         </Link>
         <p>{product.description}</p>
         <div className={styles.footer}>
-          <span className={styles.price}>{product.price}</span>
+          {product.variants ? (
+            <span className={styles.price}>
+              {product.variants.map((v) => (
+                <span key={v.label} className={styles.variant}>
+                  {v.label}: {v.price}
+                </span>
+              ))}
+            </span>
+          ) : (
+            <span className={styles.price}>{product.price}</span>
+          )}
           <div className={styles.actions}>
             <Link href={`/products/${product.id}`} className="btn btn-outline">
               View Details

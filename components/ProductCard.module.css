@@ -115,3 +115,7 @@
   padding: 0.7rem 1.25rem;
   width: 100%;
 }
+.variant {
+  display: block;
+  line-height: 1.4;
+}

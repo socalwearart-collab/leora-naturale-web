@@ -7,15 +7,8 @@ const ingredients = [
     name: "Jackfruit",
     latin: "Artocarpus heterophyllus",
     description:
-      "Kos, polos, and waraka are three kitchen stages of the same Sri Lankan tree. Fibre-rich, naturally sweet when ripe, and savoury when young.",
+      "Mature kos from Sri Lankan trees, dehydrated as Kiri Kos. Soak it and cook a proper kos curry anywhere in the world.",
     image: IMAGES.ingredients.Jackfruit,
-  },
-  {
-    name: "Bitter Gourd",
-    latin: "Momordica charantia",
-    description:
-      "Karavila, used across Sri Lankan homes for its earthy bitterness. Dehydrated into light chips or rehydrated for curry.",
-    image: IMAGES.ingredients["Bitter Gourd"],
   },
   {
     name: "Heen Bovitiya",
@@ -25,11 +18,18 @@ const ingredients = [
     image: IMAGES.ingredients["Heen Bovitiya"],
   },
   {
-    name: "Banana & Sesame",
-    latin: "Musa spp. · Sesamum indicum",
+    name: "Butterfly Pea",
+    latin: "Clitoria ternatea",
     description:
-      "Ripe kesel dried without frying or added sugar, optionally finished with toasted sesame for crunch and protein.",
-    image: IMAGES.ingredients["Banana & Sesame"],
+      "Nil katarolu flowers that brew a vivid blue, caffeine-free drink and colour string hoppers, rice and desserts naturally.",
+    image: IMAGES.ingredients["Butterfly Pea"],
+  },
+  {
+    name: "Chai Spices",
+    latin: "Cinnamomum verum · Elettaria cardamomum",
+    description:
+      "Sri Lankan cinnamon, cardamom, cloves, ginger, nutmeg, fennel and pepper, ground together for masala tea.",
+    image: IMAGES.ingredients["Chai Spices"],
   },
 ];
 

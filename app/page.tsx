@@ -6,7 +6,6 @@ import CategoryCards from "@/components/CategoryCards";
 import ProcessSection from "@/components/ProcessSection";
 import IngredientsSection from "@/components/IngredientsSection";
 import ImpactSection from "@/components/ImpactSection";
-import TestimonialsSection from "@/components/TestimonialsSection";
 import BlogSection from "@/components/BlogSection";
 import CertificationsSection from "@/components/CertificationsSection";
 import FAQSection from "@/components/FAQSection";
@@ -32,13 +31,12 @@ export default function HomePage() {
       <ProductGrid
         products={featuredProducts}
         title="Popular Products"
-        subtitle="Discover our chemical-free range of dehydrated fruits, traditional vegetables, and herbal wellness — packed with nutrients and crafted in Sri Lanka."
+        subtitle="Kiri Kos, Heen Bovitiya, Butterfly Pea Flower and Chai Masala — chemical-free and crafted in Sri Lanka."
       />
       <CategoryCards />
       <ProcessSection />
       <IngredientsSection />
       <ImpactSection />
-      <TestimonialsSection />
       <BlogSection />
       <CertificationsSection />
       <FAQSection />

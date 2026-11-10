@@ -14,7 +14,7 @@ const steps = [
   {
     number: "03",
     title: "Quality Packaging",
-    description: "Carefully packaged to preserve freshness for up to 12 months in cool, dry storage.",
+    description: "Carefully packaged to keep fresh for 6 months to 1 year, depending on the product.",
   },
   {
     number: "04",

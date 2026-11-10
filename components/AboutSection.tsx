@@ -22,10 +22,10 @@ export default function AboutSection() {
             Leora Naturale <em>Sri Lanka</em>
           </h2>
           <p>
-            Leora Naturale is a Sri Lankan brand of dehydrated fruit, traditional vegetables,
-            and herbal wellness. We take island harvests — pineapple, jackfruit, banana,
-            karavila, kohila, and Heen Bovitiya — and preserve them with low-temperature
-            dehydration so kitchens can cook, and snackers can eat, without chemicals.
+            Leora Naturale is a Sri Lankan brand of dehydrated food and herbal wellness. We
+            take island harvests — jackfruit, Heen Bovitiya, butterfly pea flowers and spices —
+            and preserve them with low-temperature dehydration so kitchens abroad can cook
+            and brew the taste of home, without chemicals.
           </p>
           <p>
             The range is labelled in English, Sinhala, and Tamil. Fruit packs are eaten as

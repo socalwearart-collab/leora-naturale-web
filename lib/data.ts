@@ -22,6 +22,12 @@ export type Product = {
   storage: string;
   featured: boolean;
   inStock: boolean;
+  /** optional search title / meta description overrides */
+  seoTitle?: string;
+  metaDescription?: string;
+  faqs?: { question: string; answer: string }[];
+  /** pack sizes sold at different prices, e.g. 25 and 15 tea bags */
+  variants?: { label: string; price: string }[];
 };
 
 export type BlogPost = {
@@ -31,9 +37,12 @@ export type BlogPost = {
   date: string;
   image: string;
   content: string;
+  keyword?: string;
+  /** product ids this post links to */
+  products?: string[];
+  faqs?: { question: string; answer: string }[];
 };
 
-export const BRAND_TAGLINE_SINHALA = "රැකි ගුණි ස්වභාවික";
 export const BRAND_TAGLINE_EN = "Preserved Quality, Naturally";
 export const LOGO_SRC = "/images/logo.jpg";
 
@@ -58,11 +67,15 @@ export function getCategories(): string[] {
 }
 
 export function getBlogPosts(): BlogPost[] {
-  return blogPosts as BlogPost[];
+  return (blogPosts as BlogPost[]).slice().sort((a, b) => b.date.localeCompare(a.date));
 }
 
 export function getBlogPostBySlug(slug: string): BlogPost | undefined {
   return getBlogPosts().find((post) => post.slug === slug);
+}
+
+export function getPostsForProduct(id: string): BlogPost[] {
+  return getBlogPosts().filter((post) => post.products?.includes(id));
 }
 
 export function getFaqs(): { question: string; answer: string }[] {

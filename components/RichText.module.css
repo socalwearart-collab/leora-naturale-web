@@ -1,0 +1,19 @@
+.rich {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+.rich h2 {
+  font-family: var(--font-heading), Georgia, serif;
+  color: var(--forest);
+  font-size: 1.6rem;
+  line-height: 1.25;
+  margin-top: 1rem;
+}
+.rich ol,
+.rich ul {
+  padding-left: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}

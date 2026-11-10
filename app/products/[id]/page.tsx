@@ -2,7 +2,8 @@ import Link from "next/link";
 import SiteImage from "@/components/SiteImage";
 import JsonLd from "@/components/JsonLd";
 import { notFound } from "next/navigation";
-import { getProductById, getProducts, getWhatsAppOrderLink } from "@/lib/data";
+import { getPostsForProduct, getProductById, getProducts, getWhatsAppOrderLink } from "@/lib/data";
+import FaqList from "@/components/FaqList";
 import { STORE_LINKS } from "@/lib/site";
 import { breadcrumbJsonLd, productJsonLd } from "@/lib/seo";
 import ProductCard from "@/components/ProductCard";
@@ -18,8 +19,10 @@ export function generateMetadata({ params }: Props) {
   const product = getProductById(params.id);
   if (!product) return { title: "Product Not Found" };
   return {
-    title: `${product.name} from Sri Lanka`,
-    description: `${product.description} Buy ${product.name} from Leora Naturale. Product of Sri Lanka. Order on WhatsApp.`,
+    title: product.seoTitle ?? `${product.name} from Sri Lanka`,
+    description:
+      product.metaDescription ??
+      `${product.description} Buy ${product.name} from Leora Naturale. Product of Sri Lanka. Order on WhatsApp.`,
     keywords: [
       product.name,
       product.nameSinhala,
@@ -44,6 +47,7 @@ export default function ProductDetailPage({ params }: Props) {
   const related = getProducts()
     .filter((p) => p.category === product.category && p.id !== product.id)
     .slice(0, 3);
+  const reads = getPostsForProduct(product.id);
 
   return (
     <>
@@ -83,8 +87,21 @@ export default function ProductDetailPage({ params }: Props) {
                 <em>{product.scientificName}</em>
               </p>
             )}
-            <p className={styles.price}>{product.price}</p>
-            <p className={styles.weight}>{product.weight}</p>
+            {product.variants ? (
+              <ul className={styles.variants}>
+                {product.variants.map((v) => (
+                  <li key={v.label}>
+                    <span className={styles.weight}>{v.label}</span>
+                    <span className={styles.price}>{v.price}</span>
+                  </li>
+                ))}
+              </ul>
+            ) : (
+              <>
+                <p className={styles.price}>{product.price}</p>
+                <p className={styles.weight}>{product.weight}</p>
+              </>
+            )}
             <p className={styles.description}>{product.longDescription}</p>
 
             <div className={styles.benefits}>
@@ -133,6 +150,23 @@ export default function ProductDetailPage({ params }: Props) {
           </div>
         </div>
       </section>
+
+      {product.faqs && <FaqList faqs={product.faqs} />}
+
+      {reads.length > 0 && (
+        <section className={`section ${styles.reads}`}>
+          <div className="container">
+            <span className="section-label">Read More</span>
+            <ul className={styles.readList}>
+              {reads.map((post) => (
+                <li key={post.slug}>
+                  <Link href={`/blog/${post.slug}/`}>{post.title} →</Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      )}
 
       {related.length > 0 && (
         <section className={`section ${styles.related}`}>

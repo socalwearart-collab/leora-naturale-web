@@ -9,14 +9,13 @@ export const BASE_PATH = process.env.NEXT_PUBLIC_BASE_PATH || "";
 export const SITE_NAME = "Leora Naturale";
 export const SITE_LEGAL_NAME = "Leora Naturale";
 export const SITE_TAGLINE_EN = "Preserved Quality, Naturally";
-export const SITE_TAGLINE_SI = "රැකි ගුණි ස්වභාවික";
 export const SITE_DESCRIPTION =
   "Leora Naturale is a Sri Lankan brand of preservative-free dehydrated fruits, traditional vegetables, and herbal wellness products. Low-temperature dehydration locks in nutrients without artificial colours, flavours, or additives.";
 
 export const CONTACT_EMAIL = "leoranaturale@gmail.com";
 export const CONTACT_PHONE = "071 8147561";
 export const CONTACT_PHONE_E164 = "+94718147561";
-export const WHATSAPP_NUMBER = "940718147561";
+export const WHATSAPP_NUMBER = "94718147561";
 export const ORIGIN_COUNTRY = "Sri Lanka";
 export const FACEBOOK_URL = "https://www.facebook.com/p/Leora-Naturale-61587794566990/";
 

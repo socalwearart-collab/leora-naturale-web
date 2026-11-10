@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Logo from "./Logo";
-import { CONTACT_EMAIL, BRAND_TAGLINE_SINHALA } from "@/lib/data";
+import { CONTACT_EMAIL } from "@/lib/data";
 import { ORDER_CHANNELS, SOCIAL_LINKS } from "@/lib/site";
 import styles from "./Footer.module.css";
 
@@ -11,7 +11,6 @@ export default function Footer() {
         <div>
           <div className={styles.brand}>
             <Logo variant="footer" />
-            <p className={styles.tagline}>{BRAND_TAGLINE_SINHALA}</p>
             <p>Premium dehydrated snacks &amp; herbal wellness from Sri Lanka.</p>
           </div>
         </div>
