@@ -1,224 +1,53 @@
 [
   {
-    "id": "dehydrated-pineapple",
-    "name": "Dehydrated Pineapple",
-    "nameSinhala": "විජලිත අන්නාසි",
-    "scientificName": "Ananas comosus",
-    "category": "Fruit Snacks",
-    "description": "Sun-ripened Sri Lankan pineapple, gently dehydrated to lock in tropical sweetness with no added sugar.",
-    "longDescription": "විජලිත අන්නාසි — 100% pineapple, no preservatives, no artificial colors. Low-temperature dehydration concentrates the bright, honeyed flavour of island-grown fruit into a chewy-crisp snack. Product of Sri Lanka.",
-    "price": "From Rs 650.00 LKR",
-    "weight": "70g / 100g packs available",
-    "image": "/images/products/pineapple.jpg",
-    "benefits": ["100% Natural", "No preservatives", "No added sugar", "Product of Sri Lanka"],
-    "usage": "Enjoy as a snack, chop into trail mix, or rehydrate briefly for desserts and fruit salads.",
-    "storage": "Store in a cool, dry place. Keeps up to 12 months when sealed.",
-    "featured": true,
-    "inStock": true
-  },
-  {
-    "id": "dehydrated-sweet-jackfruit",
-    "name": "Dehydrated Sweet Jackfruit",
-    "nameSinhala": "විජලිත වරකා",
-    "scientificName": "Artocarpus heterophyllus",
-    "category": "Fruit Snacks",
-    "description": "Ripe waraka with a honey-like sweetness and a unique chewy-crisp bite — Sri Lanka's favourite fruit, preserved.",
-    "longDescription": "විජලිත වරකා — crafted from sun-ripened sweet jackfruit using low-temperature dehydration. Naturally sweet, aromatic, and free from additives. The taste of home, ready whenever you are.",
-    "price": "From Rs 700.00 LKR",
-    "weight": "50g / 100g packs available",
-    "image": "/images/products/sweet-jackfruit.jpg",
-    "benefits": ["Naturally sweet — no added sugar", "Rich in fibre", "No artificial colours", "Product of Sri Lanka"],
-    "usage": "Snack as-is, add to granola and yogurt, or use as a natural sweetener in baking.",
-    "storage": "Store sealed in a cool, dry place for up to 12 months.",
-    "featured": true,
-    "inStock": true
-  },
-  {
-    "id": "dehydrated-banana",
-    "name": "Dehydrated Banana",
-    "nameSinhala": "විජලිත කෙසෙල්",
-    "scientificName": "Musa spp.",
-    "category": "Fruit Snacks",
-    "description": "Ripe Sri Lankan bananas, slowly dehydrated into a naturally sweet, satisfying everyday snack.",
-    "longDescription": "විජලිත කෙසෙල් — nothing but banana. Low-temperature dehydration preserves potassium-rich fruit and the mellow sweetness of island kesel, without frying or added sugar.",
-    "price": "From Rs 550.00 LKR",
-    "weight": "100g / 200g packs available",
-    "image": "/images/products/banana.jpg",
-    "benefits": ["Naturally sweet", "No frying or added oil", "Kid-friendly", "100% banana"],
-    "usage": "Perfect as a lunchbox snack, cereal topping, or energy bite on the go.",
-    "storage": "Keep sealed in a cool, dry place for up to 12 months.",
-    "featured": true,
-    "inStock": true
-  },
-  {
-    "id": "dehydrated-banana-sesame",
-    "name": "Dehydrated Banana with Sesame",
-    "nameSinhala": "විජලිත කෙසෙල්",
-    "scientificName": "Musa spp. with Sesamum indicum",
-    "category": "Fruit Snacks",
-    "description": "Naturally sweet banana pieces finished with toasted sesame for a nutty, protein-rich crunch.",
-    "longDescription": "The same gently dehydrated Sri Lankan banana, encrusted with sesame seeds. A fusion snack that is naturally sweet, lightly nutty, and completely free of added sugar.",
-    "price": "From Rs 750.00 LKR",
-    "weight": "100g / 200g packs available",
-    "image": "/images/products/banana-sesame.jpg",
-    "benefits": ["No added sugar", "Sesame adds protein and crunch", "Guilt-free snacking", "Kid-friendly"],
-    "usage": "Enjoy as a standalone snack, lunchbox treat, or topping for yogurt and oatmeal.",
-    "storage": "Store sealed in a cool, dry place for up to 12 months.",
-    "featured": false,
-    "inStock": true
-  },
-  {
     "id": "dehydrated-jackfruit",
     "name": "Dehydrated Jackfruit",
-    "nameSinhala": "විජලිත කොස්",
+    "nameSinhala": "කිරි කොස්",
     "scientificName": "Artocarpus heterophyllus",
     "category": "Traditional Vegetables",
-    "description": "Mature kos, dehydrated for everyday cooking — the flavour of a Sri Lankan kitchen, ready in minutes.",
-    "longDescription": "විජලිත කොස් — 100% jackfruit, no preservatives. Rehydrate and cook as you would fresh kos: curry, mallum, or stir-fry. A pantry staple that captures harvest flavour year-round.",
-    "price": "From Rs 350.00 LKR",
-    "weight": "50g / 500g / 1kg packs available",
-    "image": "/images/products/jackfruit.jpg",
-    "benefits": ["100% Natural", "No preservatives", "Kitchen-ready", "Product of Sri Lanka"],
+    "description": "Kiri Kos: mature Sri Lankan jackfruit, dehydrated for everyday cooking. The flavour of a Sri Lankan kitchen, ready in minutes.",
+    "longDescription": "කිරි කොස් (Kiri Kos) is 100% jackfruit with no preservatives, now in a clear zip pouch so you can see what you buy. Rehydrate and cook as you would fresh kos: curry, mallum or stir-fry. A pantry staple that keeps harvest flavour year-round.",
+    "price": "Rs 350.00 LKR",
+    "weight": "Net Wt: 50g",
+    "image": "/images/products/kiri-kos.jpg",
+    "benefits": [
+      "100% Natural",
+      "No preservatives",
+      "Kitchen-ready",
+      "Product of Sri Lanka"
+    ],
     "usage": "Soak in lukewarm water for 45–60 minutes, then cook as usual in curry, mallum, or stir-fry.",
-    "storage": "Store in a cool, dry place. Keeps up to 12 months when sealed.",
+    "storage": "Store in a cool, dry place. Shelf life is printed on the pack (6 months to 1 year depending on the product).",
     "featured": true,
-    "inStock": true
-  },
-  {
-    "id": "dehydrated-jackfruit-spices",
-    "name": "Dehydrated Jackfruit with Spices",
-    "nameSinhala": "විජලිත කොස්",
-    "scientificName": "Artocarpus heterophyllus",
-    "category": "Spiced Range",
-    "description": "Kos seasoned with traditional Sri Lankan spices — ready to rehydrate and serve with almost no prep.",
-    "longDescription": "The same premium dehydrated jackfruit, finished with a house blend of island spices. Ideal when you want authentic kos flavour without measuring a full spice box.",
-    "price": "From Rs 950.00 LKR",
-    "weight": "50g / 100g packs available",
-    "image": "/images/products/jackfruit-spices.jpg",
-    "benefits": ["Pre-seasoned", "Authentic Sri Lankan spice blend", "No preservatives", "Quick to cook"],
-    "usage": "Rehydrate 45–60 minutes, then sauté or simmer. Taste before adding extra salt or chilli.",
-    "storage": "Store sealed in a cool, dry place. Reseal after opening.",
-    "featured": false,
-    "inStock": true
-  },
-  {
-    "id": "dehydrated-unripe-jackfruit",
-    "name": "Dehydrated Unripe Jackfruit",
-    "nameSinhala": "විජලිත පොලොස්",
-    "scientificName": "Artocarpus heterophyllus",
-    "category": "Traditional Vegetables",
-    "description": "Young polos, preserved at peak tenderness for classic Sri Lankan curries any day of the year.",
-    "longDescription": "විජලිත පොලොස් — unripe jackfruit dehydrated at low temperature so the tender texture and savoury character survive. A traditional favourite made pantry-stable.",
-    "price": "From Rs 850.00 LKR",
-    "weight": "50g / 100g packs available",
-    "image": "/images/products/unripe-jackfruit.jpg",
-    "benefits": ["Traditional Sri Lankan ingredient", "Tender when rehydrated", "No additives", "Long shelf life"],
-    "usage": "Soak 60 minutes in lukewarm water, then prepare polos curry, moju, or tempered dishes as usual.",
-    "storage": "Keep in a cool, dry place. Reseal after opening.",
-    "featured": false,
-    "inStock": true
-  },
-  {
-    "id": "dehydrated-unripe-jackfruit-spices",
-    "name": "Dehydrated Unripe Jackfruit with Spices",
-    "nameSinhala": "විජලිත පොලොස්",
-    "scientificName": "Artocarpus heterophyllus",
-    "category": "Spiced Range",
-    "description": "Polos already kissed with spices — rehydrate and cook for a fast, authentic curry night.",
-    "longDescription": "Young jackfruit with a traditional spice finish. Built for busy kitchens that still want the depth of a home-cooked polos dish.",
-    "price": "From Rs 950.00 LKR",
-    "weight": "50g / 100g packs available",
-    "image": "/images/products/unripe-jackfruit-spices.jpg",
-    "benefits": ["Pre-seasoned for convenience", "Authentic flavour", "No preservatives", "Weeknight-friendly"],
-    "usage": "Rehydrate 60 minutes, then simmer or temper. Adjust chilli to taste.",
-    "storage": "Store sealed in a cool, dry place for up to 12 months.",
-    "featured": false,
-    "inStock": true
-  },
-  {
-    "id": "dehydrated-ash-plantain",
-    "name": "Dehydrated Ash Plantain",
-    "nameSinhala": "විජලිත අළු කෙසෙල්",
-    "scientificName": "Musa × paradisiaca",
-    "category": "Traditional Vegetables",
-    "description": "Ash plantain (alu kesel) dehydrated for mallum, curry, and everyday Sri Lankan cooking.",
-    "longDescription": "විජලිත අළු කෙසෙල් — cooking plantain preserved without frying or chemicals. Rehydrates into the familiar firm texture used in island kitchens.",
-    "price": "From Rs 850.00 LKR",
-    "weight": "100g / 200g packs available",
-    "image": "/images/products/ash-plantain.jpg",
-    "benefits": ["Traditional cooking staple", "No frying", "Chemical-free", "Pantry-ready"],
-    "usage": "Soak 45–60 minutes, then slice and cook as mallum, curry, or tempered alu kesel.",
-    "storage": "Store in a cool, dry place. Reseal after opening.",
-    "featured": true,
-    "inStock": true
-  },
-  {
-    "id": "dehydrated-ash-plantain-spices",
-    "name": "Dehydrated Ash Plantain with Spices",
-    "nameSinhala": "විජලිත අළු කෙසෙල්",
-    "scientificName": "Musa × paradisiaca",
-    "category": "Spiced Range",
-    "description": "Alu kesel with a ready spice blend — a faster path to a familiar home-style dish.",
-    "longDescription": "Dehydrated ash plantain finished with traditional spices. Rehydrate and cook for a fragrant, savoury plate with very little prep.",
-    "price": "From Rs 850.00 LKR",
-    "weight": "100g / 200g packs available",
-    "image": "/images/products/ash-plantain-spices.jpg",
-    "benefits": ["Pre-seasoned", "Authentic Sri Lankan taste", "No preservatives", "Quick to prepare"],
-    "usage": "Rehydrate 45–60 minutes, then sauté or simmer. Taste before adding extra salt.",
-    "storage": "Keep sealed in a cool, dry place.",
-    "featured": false,
-    "inStock": true
-  },
-  {
-    "id": "dehydrated-bitter-gourd",
-    "name": "Dehydrated Bitter Gourd",
-    "nameSinhala": "විජලිත කරවිල",
-    "scientificName": "Momordica charantia",
-    "category": "Traditional Vegetables",
-    "description": "Crisp karavila chips that keep the authentic earthy bitterness and wellness character of the fresh gourd.",
-    "longDescription": "විජලිත කරවිල — celebrated in Sri Lankan cuisine for its wellness properties. Gentle dehydration turns bitter gourd into light, crisp pieces you can snack on or cook with.",
-    "price": "From Rs 990.00 LKR",
-    "weight": "75g / 150g packs available",
-    "image": "/images/products/bitter-gourd.jpg",
-    "benefits": ["Low in calories", "Rich in vitamins and minerals", "No artificial additives", "Supports a balanced diet"],
-    "usage": "Enjoy as crispy chips, or rehydrate with a little water for curries and stir-fries.",
-    "storage": "Keep sealed in a cool, dry place for up to 12 months.",
-    "featured": true,
-    "inStock": true
-  },
-  {
-    "id": "dehydrated-kohila",
-    "name": "Dehydrated Kohila",
-    "nameSinhala": "විජලිත කොහිල",
-    "scientificName": "Lasia spinosa",
-    "category": "Traditional Roots",
-    "description": "Fibre-rich Lasia spinosa, dehydrated to preserve its earthy flavour and traditional kitchen texture.",
-    "longDescription": "විජලිත කොහිල — a traditional Sri Lankan aquatic plant valued for fibre and a distinctive earthy taste. Low-temperature dehydration locks in nutrients so you can cook kohila any season.",
-    "price": "From Rs 850.00 LKR",
-    "weight": "100g / 200g packs available",
-    "image": "/images/products/kohila.jpg",
-    "benefits": ["High in dietary fibre", "Traditional Sri Lankan ingredient", "Versatile in cooking", "Chemical-free processing"],
-    "usage": "Rehydrate for 45–60 minutes, then prepare as mallum, curry, or stir-fry — just like fresh kohila.",
-    "storage": "Store in a cool, dry place. Reseal after opening.",
-    "featured": true,
-    "inStock": true
-  },
-  {
-    "id": "dehydrated-kohila-spices",
-    "name": "Dehydrated Kohila with Spices",
-    "nameSinhala": "විජලිත කොහිල",
-    "scientificName": "Lasia spinosa",
-    "category": "Spiced Range",
-    "description": "Kohila with a traditional spice finish — earthy, fibre-rich, and ready for a quick mallum or curry.",
-    "longDescription": "The same fibre-rich kohila, seasoned with island spices. Built for cooks who want heritage flavour without a long prep list.",
-    "price": "From Rs 1,000.00 LKR",
-    "weight": "100g / 200g packs available",
-    "image": "/images/products/kohila-spices.jpg",
-    "benefits": ["Pre-seasoned", "High in dietary fibre", "No preservatives", "Heritage recipe"],
-    "usage": "Rehydrate 45–60 minutes, then cook as mallum or curry. Adjust salt to taste.",
-    "storage": "Store sealed in a cool, dry place.",
-    "featured": false,
-    "inStock": true
+    "inStock": true,
+    "seoTitle": "Sri Lankan Dehydrated Jackfruit (Kos)",
+    "metaDescription": "Real Sri Lankan jackfruit (kos), gently dehydrated for everyday cooking. A taste of home from Leora Naturale, shipped to Australia, Canada and beyond.",
+    "faqs": [
+      {
+        "question": "What is Leora Naturale Dehydrated Jackfruit?",
+        "answer": "It is mature Sri Lankan jackfruit (kos), dehydrated in Sri Lanka by Leora Naturale for cooking. Soak it, then cook it like fresh kos."
+      },
+      {
+        "question": "Where is it made?",
+        "answer": "In Sri Lanka, by Leora Naturale, from island-grown jackfruit."
+      },
+      {
+        "question": "What is in it?",
+        "answer": "Only jackfruit. No preservatives are added."
+      },
+      {
+        "question": "How do I cook it?",
+        "answer": "Soak in lukewarm water for 45 to 60 minutes, drain, then cook as usual in curry, mallum or a stir-fry."
+      },
+      {
+        "question": "How long does it last?",
+        "answer": "See the best-before date on your pack. Keep it sealed in a cool, dry place."
+      },
+      {
+        "question": "Do you send orders overseas?",
+        "answer": "Yes. We pack orders for Sri Lankan families in Australia, Canada and beyond. Message us on WhatsApp with your country and we will confirm delivery time and cost before you pay."
+      }
+    ]
   },
   {
     "id": "heen-bovitiya-tea",
@@ -226,16 +55,59 @@
     "nameSinhala": "හීන් බෝවිටියා හර්බල් තේ",
     "scientificName": "Osbeckia octandra",
     "category": "Herbal Wellness",
-    "description": "Floral, caffeine-free herbal tea steeped in Sri Lankan wellness heritage — 25 tea bags of quiet evenings.",
-    "longDescription": "Heen Bovitiya (Osbeckia octandra) is a treasured Sri Lankan herb. Our herbal tea delivers delicate floral notes and a calming cup — 100% natural, 25 tea bags, product of Sri Lanka.",
-    "price": "From Rs 875.00 LKR",
-    "weight": "25 Tea Bags",
+    "description": "Floral, caffeine-free herbal tea steeped in Sri Lankan wellness heritage, in boxes of 25 or 15 tea bags.",
+    "longDescription": "Heen Bovitiya (Osbeckia octandra) is a treasured Sri Lankan herb. Our herbal tea delivers delicate floral notes and a calming cup. 100% natural, product of Sri Lanka. Choose 25 tea bags (Rs 875) or 15 tea bags (Rs 525).",
+    "price": "Rs 875.00 LKR",
+    "weight": "25 Tea Bags / 15 Tea Bags",
     "image": "/images/products/heen-bovitiya-tea.jpg",
-    "benefits": ["Traditional Sri Lankan herb", "Calming floral aroma", "Caffeine-free", "100% natural ingredients"],
+    "benefits": [
+      "Traditional Sri Lankan herb",
+      "Calming floral aroma",
+      "Caffeine-free",
+      "100% natural ingredients"
+    ],
     "usage": "Steep one bag in hot water for 5–7 minutes. Enjoy plain or with a touch of honey.",
     "storage": "Store in an airtight container away from direct sunlight.",
     "featured": true,
-    "inStock": true
+    "inStock": true,
+    "seoTitle": "Heen Bovitiya Tea | Traditional Sri Lankan Herbal Tea",
+    "metaDescription": "Heen Bovitiya herbal tea from Sri Lanka in caffeine-free tea bags: 25 bags Rs 875 or 15 bags Rs 525. A traditional brew from home, from Leora Naturale.",
+    "faqs": [
+      {
+        "question": "What is Heen Bovitiya tea?",
+        "answer": "Heen Bovitiya tea is a traditional Sri Lankan herbal tea made from Osbeckia octandra leaves. Leora Naturale packs it in Sri Lanka in boxes of 25 or 15 caffeine-free tea bags."
+      },
+      {
+        "question": "How do I brew it?",
+        "answer": "Steep one bag in freshly boiled water for five to seven minutes. Enjoy it plain or with a little honey."
+      },
+      {
+        "question": "What pack sizes are there?",
+        "answer": "25 tea bags for Rs 875.00 or 15 tea bags for Rs 525.00."
+      },
+      {
+        "question": "Does it contain caffeine?",
+        "answer": "No. Heen Bovitiya is a herb, not tea from the Camellia sinensis plant."
+      },
+      {
+        "question": "Where can I buy it abroad?",
+        "answer": "On leoranaturale.com, on Daraz, or by messaging Leora Naturale on WhatsApp."
+      },
+      {
+        "question": "Do you send orders overseas?",
+        "answer": "Yes. We pack orders for Sri Lankan families in Australia, Canada and beyond. Message us on WhatsApp with your country and we will confirm delivery time and cost before you pay."
+      }
+    ],
+    "variants": [
+      {
+        "label": "25 tea bags",
+        "price": "Rs 875.00 LKR"
+      },
+      {
+        "label": "15 tea bags",
+        "price": "Rs 525.00 LKR"
+      }
+    ]
   },
   {
     "id": "heen-bovitiya-powder",
@@ -244,14 +116,122 @@
     "scientificName": "Osbeckia octandra",
     "category": "Herbal Wellness",
     "description": "Finely milled Heen Bovitiya leaf powder — stir into drinks for a daily herbal wellness boost.",
-    "longDescription": "හීන් බෝවිටියා කුඩු — finely milled from premium leaves, 40g net. Mixes easily into warm water, smoothies, and porridge. No fillers, no additives.",
-    "price": "From Rs 1,200.00 LKR",
-    "weight": "Net Wt: 40g",
-    "image": "/images/products/heen-bovitiya-powder.jpg",
-    "benefits": ["Easy to mix into drinks", "Concentrated herbal goodness", "No fillers or additives", "Daily wellness support"],
+    "longDescription": "හීන් බෝවිටියා කුඩු — finely milled from premium leaves, 50 g net in five 10 g bags. Mixes easily into warm water, smoothies, and porridge. No fillers, no additives.",
+    "price": "Rs 650.00 LKR",
+    "weight": "Net Wt: 50g (5 x 10g bags)",
+    "image": "/images/products/heen-bovitiya-powder-50g.jpg",
+    "benefits": [
+      "Easy to mix into drinks",
+      "Concentrated herbal goodness",
+      "No fillers or additives",
+      "Daily wellness support"
+    ],
     "usage": "Add half a teaspoon to warm water, smoothies, or porridge. Stir well and enjoy.",
     "storage": "Keep in a sealed container in a cool, dry place.",
-    "featured": false,
-    "inStock": true
+    "featured": true,
+    "inStock": true,
+    "seoTitle": "Heen Bovitiya Powder | Sri Lankan Herbal Leaf Powder",
+    "metaDescription": "Heen Bovitiya (Osbeckia octandra) leaf powder from Sri Lanka, 50 g. Stir into warm water or porridge. From Leora Naturale, shipped abroad.",
+    "faqs": [
+      {
+        "question": "What is Heen Bovitiya powder?",
+        "answer": "It is finely milled Heen Bovitiya (Osbeckia octandra) leaf from Sri Lanka, packed by Leora Naturale as 50 g in five 10 g bags."
+      },
+      {
+        "question": "How is the powder packed?",
+        "answer": "Each 50 g pack holds five 10 g bags, so you open one small bag at a time and the rest stay sealed and fresh."
+      },
+      {
+        "question": "How do I use it?",
+        "answer": "Stir half a teaspoon into warm water, porridge or a smoothie and mix well."
+      },
+      {
+        "question": "What is the difference between the powder and the tea bags?",
+        "answer": "Both are 100% Heen Bovitiya. The tea bags steep like tea; the powder stirs straight into drinks and food."
+      },
+      {
+        "question": "Do you send orders overseas?",
+        "answer": "Yes. We pack orders for Sri Lankan families in Australia, Canada and beyond. Message us on WhatsApp with your country and we will confirm delivery time and cost before you pay."
+      }
+    ]
+  },
+  {
+    "id": "butterfly-pea-flower",
+    "name": "Butterfly Pea Flower",
+    "nameSinhala": "නිල් කටරොළු මල්",
+    "scientificName": "Clitoria ternatea",
+    "category": "Herbal Wellness",
+    "description": "Dried nil katarolu flowers for a vivid blue herbal drink, and a natural colour for string hoppers, rice and desserts.",
+    "longDescription": "නිල් කටරොළු මල් (Clitoria ternatea) is known for its vivid, natural blue colour and is traditionally valued for its calming qualities. 100% butterfly pea flower, 10 g, product of Sri Lanka.",
+    "price": "Rs 400.00 LKR",
+    "weight": "Net Wt: 10g",
+    "image": "/images/products/butterfly-pea-flower.jpg",
+    "benefits": [
+      "100% butterfly pea flower",
+      "Vivid natural blue colour",
+      "Caffeine-free herbal drink",
+      "Product of Sri Lanka"
+    ],
+    "usage": "As a drink: steep in warm water for 3–5 minutes. As a colour: use the brew to colour string hoppers (idiyappam), rice and desserts.",
+    "storage": "Store in a cool, dry place.",
+    "featured": true,
+    "inStock": true,
+    "faqs": [
+      {
+        "question": "What is Butterfly Pea Flower?",
+        "answer": "Butterfly pea (Clitoria ternatea), called nil katarolu in Sinhala and sangu poo in Tamil, is a flower that brews into a vivid blue, caffeine-free herbal drink."
+      },
+      {
+        "question": "How do I brew it?",
+        "answer": "Steep the flowers in warm water for 3 to 5 minutes."
+      },
+      {
+        "question": "Can I use it as a food colour?",
+        "answer": "Yes. Use the blue brew to colour string hoppers, rice and desserts naturally."
+      },
+      {
+        "question": "What is in the pack?",
+        "answer": "100% dried butterfly pea flower, 10 g."
+      }
+    ],
+    "seoTitle": "Butterfly Pea Flower (Nil Katarolu) from Sri Lanka",
+    "metaDescription": "Dried Sri Lankan butterfly pea flowers (nil katarolu) for a vivid blue herbal drink and naturally blue string hoppers, rice and desserts. 10 g from Leora Naturale."
+  },
+  {
+    "id": "chai-masala",
+    "name": "Chai Masala",
+    "nameSinhala": "චායි මසාලා",
+    "category": "Spice Blends",
+    "description": "A warming Sri Lankan spice powder for masala tea: cinnamon, cardamom, cloves, ginger, nutmeg, fennel and pepper.",
+    "longDescription": "චායි මසාලා: a finely ground blend of Sri Lankan spices (kurundu, karadamungu, karabu neti, inguru, sadikka, maduru and gammiris) for a fragrant cup of masala tea. The clear window on the pack shows the rich brown powder inside. 100% spices, 20 g, product of Sri Lanka.",
+    "price": "Rs 450.00 LKR",
+    "weight": "Net Wt: 20g",
+    "image": "/images/products/chai-masala.jpg",
+    "benefits": [
+      "7 Sri Lankan spices",
+      "100% natural",
+      "Just spices, nothing else",
+      "Product of Sri Lanka"
+    ],
+    "usage": "Add a small pinch per cup to black tea or milk tea while it brews. Adjust to taste.",
+    "storage": "Keep sealed in a cool, dry place away from sunlight.",
+    "featured": true,
+    "inStock": true,
+    "faqs": [
+      {
+        "question": "What is in Leora Naturale Chai Masala?",
+        "answer": "Cinnamon, cardamom, cloves, ginger, nutmeg, fennel and black pepper. There are no tea leaves in the blend."
+      },
+      {
+        "question": "How do I use it?",
+        "answer": "Add a small pinch per cup to black tea or milk tea while it brews, then strain and sweeten to taste."
+      },
+      {
+        "question": "How much is in a pack?",
+        "answer": "20 g."
+      }
+    ],
+    "seoTitle": "Chai Masala Spice Blend from Sri Lanka",
+    "metaDescription": "Leora Naturale Chai Masala: a 20 g blend of Sri Lankan cinnamon, cardamom, cloves, ginger, nutmeg, fennel and pepper for masala tea. Shipped from Sri Lanka."
   }
 ]

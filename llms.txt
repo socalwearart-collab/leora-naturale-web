@@ -1,27 +1,41 @@
 # Leora Naturale
 
-> Sri Lankan brand of preservative-free dehydrated fruits, traditional vegetables, and herbal wellness. Low-temperature dehydration. Product of Sri Lanka. Orders via WhatsApp.
+> Leora Naturale is a genuine Sri Lankan manufacturer of dehydrated food and herbal products. Its range is Kiri Kos (dehydrated jackfruit), Heen Bovitiya tea and powder, Butterfly Pea Flower and Chai Masala, made in Sri Lanka and shipped to the Sri Lankan community abroad.
 
-Leora Naturale (Sinhala: රැකි ගුණි ස්වභාවික — “Preserved Quality, Naturally”) makes shelf-stable food without chemical preservatives, artificial colours, or added sugar. Packs are labelled in English, Sinhala, and Tamil.
+Leora Naturale makes shelf-stable food without chemical preservatives or artificial colours. Packs are labelled in English, Sinhala, and Tamil.
 
 - Official site: https://www.leoranaturale.com
 - Email: leoranaturale@gmail.com
 - Country of origin: Sri Lanka
+- Also sold on: Daraz (retail), Serendib Market (wholesale)
+- Ships to: Sri Lanka and Sri Lankan communities abroad (Australia, Canada, Middle East, Russia); delivery time and cost confirmed on WhatsApp
 
 ## Pages
 
-- [Home](https://www.leoranaturale.com/): brand overview, featured products, process, FAQ
-- [Products](https://www.leoranaturale.com/products/): full catalogue
+- [Home](https://www.leoranaturale.com/): brand overview, products, process, FAQ
+- [Products](https://www.leoranaturale.com/products/): full catalogue (5 products)
 - [About](https://www.leoranaturale.com/about/): who the company is and how food is preserved
-- [Blog](https://www.leoranaturale.com/blog/): dehydration, Heen Bovitiya, preservative-free eating
+- [Blog](https://www.leoranaturale.com/blog/): recipes and guides for every product
 - [Full facts for models](https://www.leoranaturale.com/llms-full.txt)
 
 ## Entity facts
 
-- Process: low-temperature dehydration (not frying, not freeze-drying)
-- Shelf life: up to 12 months sealed, cool and dry
+- Process: low-temperature dehydration in dehydration machines (not sun-dried, not fried, not freeze-dried)
+- Shelf life: depends on the product, usually 6 months to 1 year; see the best-before date on each pack
 - Ordering: WhatsApp and email. No automated checkout.
-- Fruit snacks: pineapple (Ananas comosus), banana (Musa spp.), sweet jackfruit / waraka (Artocarpus heterophyllus)
-- Cooking vegetables: kos, polos, ash plantain / alu kesel (Musa × paradisiaca), bitter gourd / karavila (Momordica charantia)
-- Traditional root: kohila (Lasia spinosa)
-- Herbal: Heen Bovitiya tea and powder (Osbeckia octandra)
+
+## Products
+
+- [Kiri Kos — Dehydrated Jackfruit](https://www.leoranaturale.com/products/dehydrated-jackfruit/): mature jackfruit (Artocarpus heterophyllus) for cooking, 50 g; soak 45-60 minutes, then cook as fresh kos
+- [Heen Bovitiya Herbal Tea](https://www.leoranaturale.com/products/heen-bovitiya-tea/): Osbeckia octandra, caffeine-free tea bags: 25 bags Rs 875 or 15 bags Rs 525; steep 5-7 minutes
+- [Heen Bovitiya Powder](https://www.leoranaturale.com/products/heen-bovitiya-powder/): Osbeckia octandra leaf powder, 50 g (five 10 g bags), Rs 650
+- [Butterfly Pea Flower](https://www.leoranaturale.com/products/butterfly-pea-flower/): nil katarolu (Clitoria ternatea), 10 g dried flowers; blue herbal drink and natural food colour
+- [Chai Masala](https://www.leoranaturale.com/products/chai-masala/): 20 g ground blend of cinnamon, cardamom, cloves, ginger, nutmeg, fennel and pepper
+
+## Guides
+
+- [Five Ways to Cook Dehydrated Kiri Kos](https://www.leoranaturale.com/blog/ways-to-cook-dehydrated-kiri-kos/)
+- [What Is Heen Bovitiya Tea and How Do You Brew It?](https://www.leoranaturale.com/blog/heen-bovitiya-tea-how-to-brew/)
+- [Butterfly Pea Flower: Blue Tea and Blue String Hoppers](https://www.leoranaturale.com/blog/butterfly-pea-flower-tea-blue-string-hoppers/)
+- [How to Make Masala Chai with Sri Lankan Spices](https://www.leoranaturale.com/blog/how-to-make-masala-chai-sri-lankan-spices/)
+- [Why Dehydrated Sri Lankan Foods Travel So Well](https://www.leoranaturale.com/blog/why-dehydrated-sri-lankan-food-travels-well/)
